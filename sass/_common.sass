@@ -48,7 +48,7 @@
 // 	+jpg(bla)
 
 @import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=cyrillic,latin")
-@import url("http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic");
+@import url("http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic")
 =pt
 	font-family: 'PT Sans', Arial, sans-serif
 =pt-b
@@ -60,11 +60,100 @@ body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
-
-
-// common blocks      
+//variables
+$brown: #825b23
+%in
+	width: 960px
+	margin: 0 auto
+// =sprite-loop
+// 	@each $ico in $icons
+// 		.icon-#{$ico}
+// 			+s(#{$ico})
+$ico: logo mail phone
+=sprite-loop
+	@each $i in $ico
+		.icon-#{$i}
+			+s(#{$i})
+			display: inline-block
 .out
 	width: 100% 
+	+sprite-loop
+	
+
+//------topline
+.topline
+	.topline__in
+		@extend %in
+		+clr
+		height: 67px 
+	.topline__logo
+		float: left
+		display: inline-block
+		margin-top: 11px 
+		// vertical-align: middle
+	.topline__contacts
+		float: right
+		margin-top: 30px 
+		// vertical-align: middle
+			
+	.topline__mail, .topline__phone
+		display: inline-block
+		color: $brown
+		+pt-b
+		font-size: 15px  
+		i
+			vertical-align: middle
+			
+	.topline__mail
+		margin-right: 25px
+		i
+			position: relative
+			right: 10px 
+
+
+
+//-----nav
+.nav
+	background-color: #6e582c
+	+filter-gradient(#6e582c, #6e582c, horizontal)
+	+background-image(linear-gradient(left,  #6e582c 45%,#866728 59%,#6e582c 73%))
+
+
+	+box-shadow(0 -1px 1px #5b4925)
+	.nav__in
+		@extend %in
+	.nav__list
+		text-align: center
+		padding: 8px 0 
+		li
+			display: inline-block
+			font-size: 0
+			a
+				color: #fff
+				vertical-align: middle
+				position: relative
+				+pt
+				font-size: 16px 
+				text-decoration: none
+				padding: 0px 20px
+				&:after
+					content: '|'
+					position: absolute
+					display: inline-block
+					top: -6px
+					right: 0
+					font-size: 21px
+				&:hover
+					text-decoration: underline
+			&:last-child a:after
+				display: none
+				
+				
+
+
+
+
+
 
 
 
