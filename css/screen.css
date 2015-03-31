@@ -24,12 +24,16 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
-.topline .topline__in, .nav .nav__in { width: 960px; margin: 0 auto; }
+.topline .topline__in, .nav .nav__in, .promo .promo__in { width: 960px; margin: 0 auto; }
+
+.button { text-transform: uppercase; }
 
 .out { width: 100%; }
 .out .icon-logo { background: url('../img/icons-seed526e5db.png') 0 -30px no-repeat; width: 169px; height: 47px; display: inline-block; }
 .out .icon-mail { background: url('../img/icons-seed526e5db.png') 0 -87px no-repeat; width: 25px; height: 17px; display: inline-block; }
 .out .icon-phone { background: url('../img/icons-seed526e5db.png') 0 -114px no-repeat; width: 17px; height: 24px; display: inline-block; }
+
+.button { height: 40px; border: 1px solid #655638; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; -moz-box-shadow: 1px 2px 3px 0 #45403c, 1px 1px 3px white inset, -1px -1px 3px 0 #8f7b40 inset; -webkit-box-shadow: 1px 2px 3px 0 #45403c, 1px 1px 3px white inset, -1px -1px 3px 0 #8f7b40 inset; box-shadow: 1px 2px 3px 0 #45403c, 1px 1px 3px white inset, -1px -1px 3px 0 #8f7b40 inset; background-image: -moz-linear-gradient(left, #e4d28f, #debb61); background-image: -webkit-linear-gradient(left, #e4d28f, #debb61); background-image: linear-gradient(to right, #e4d28f, #debb61); padding: 0 6px; color: #3d3837; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 15px; }
 
 .topline .topline__in { *zoom: 1; height: 67px; }
 .topline .topline__in:after { content: " "; display: table; clear: both; }
@@ -52,3 +56,24 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
+
+.promo { background-image: url("../img/promo_bg.png"); height: 540px; position: relative; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: top center; }
+.promo .promo__header { padding-top: 30px; color: white; display: inline-block; letter-spacing: 2px; font-family: "PT Sans", Arial, sans-serif; }
+.promo .promo__header .promo__header_big { font-size: 30px; font-weight: 100; }
+.promo .promo__header .promo__header_small { font-size: 22px; font-weight: 700; }
+.promo .promo__info { margin-top: 27px; width: 425px; }
+.promo .promo__info .promo__info-text { text-align: center; font-size: 20px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: white; }
+.promo .promo__info .promo__info-text .promo__info-text_action { background-color: #fe031b; padding: 0 3px; margin-right: 3px; }
+.promo .promo__info .promo__info-form { width: 100%; }
+.promo .promo__info .promo__info-form p { text-align: center; }
+.promo .promo__info .promo__info-form .time_to { font-family: "PT Sans", Arial, sans-serif; font-style: italic; color: #dedcda; font-size: 14px; margin-bottom: 10px; }
+.promo .promo__info .form__timer { text-align: center; }
+.promo .promo__info form { text-align: center; }
+.promo .promo__info form .form__inputs { width: 100%; background: url("../img/form__inputs.png") no-repeat 0 0; width: 427px; height: 135px; text-align: center; }
+.promo .promo__info form .form__inputs_in { padding-top: 16px; }
+.promo .promo__info form .form__inputs input { -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; font-size: 18px; text-indent: 10px; padding: 5px 0; width: 90%; font-family: "PT Sans", Arial, sans-serif; -moz-box-shadow: 1px 1px 1px 0 #8c8c8c inset; -webkit-box-shadow: 1px 1px 1px 0 #8c8c8c inset; box-shadow: 1px 1px 1px 0 #8c8c8c inset; margin-bottom: 10px; }
+.promo .promo__info form .button { margin-top: 10px; letter-spacing: 1px; }
+.promo .promo__info .form__footer { margin-top: 15px; font-family: "PT Sans", Arial, sans-serif; color: white; font-size: 13px; }
+.promo .promo__we { position: absolute; right: 170px; top: 0; }
+.promo .promo__we .promo__we-man { background: url("../img/promo__man.png") no-repeat 0 0; width: 318px; height: 524px; position: relative; top: 10px; display: inline-block; }
+.promo .promo__we .promo__we-embl { background: url("../img/promo__emb.png") no-repeat 0 0; width: 161px; height: 196px; display: inline-block; vertical-align: top; position: relative; top: 48px; right: 43px; }

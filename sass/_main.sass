@@ -1,5 +1,91 @@
 // Normally mainpage styles
+//-----promo
 
+.promo
+	background-image: url('../img/promo_bg.png')
+	height: 540px 
+	position: relative
+	+background-size(cover)
+	background-position: top center 
+	.promo__in
+		@extend %in
+	.promo__header
+		padding-top: 30px
+		color: #FFF
+		display: inline-block
+		letter-spacing: 2px 
+		+pt
+		.promo__header_big
+			font-size: 30px
+			font-weight: 100 
+		.promo__header_small
+			font-size: 22px
+			font-weight: 700 
+	.promo__info
+		margin-top: 27px
+		width: 425px 
+		.promo__info-text
+			text-align: center
+			font-size: 20px 
+			+pt-b
+			color: #fff 
+			.promo__info-text_action
+				background-color: #fe031b	
+				padding: 0 3px
+				margin-right: 3px 
+		.promo__info-form
+			width: 100% 
+			p
+				text-align: center  
+			.time_to
+				+pt-i
+				color: #dedcda
+				font-size: 14px	
+				margin-bottom: 10px  
+		.form__timer
+			text-align: center
+		form
+			text-align: center
+			.form__inputs
+				width: 100% 
+				+png(form__inputs)
+				text-align: center
+				&_in
+					padding-top: 16px 
+				input
+					+border-radius(8px)
+					font-size: 18px 
+					text-indent: 10px  
+					padding: 5px  0
+					width: 90%
+					+pt
+					+box-shadow(1px 1px 1px 0 #8c8c8c inset)
+					margin-bottom: 10px 
+			.button 
+				margin-top: 10px 
+				letter-spacing: 1px 
+		.form__footer
+			margin-top: 15px 
+			+pt
+			color: #fff 
+			font-size: 13px
+	.promo__we
+		position: absolute
+		right: 170px
+		top: 0
+		.promo__we-man
+			+png(promo__man)
+			position: relative
+			top: 10px
+			// float: left
+			display: inline-block
+		.promo__we-embl
+			+png(promo__emb)
+			display: inline-block
+			vertical-align: top
+			position: relative
+			top: 48px 
+			right: 43px 
 
 
 

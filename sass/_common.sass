@@ -54,6 +54,9 @@
 =pt-b
 	font-family: 'PT Sans', Arial, sans-serif
 	font-weight: 700 
+=pt-i
+	font-family: 'PT Sans', Arial, sans-serif
+	font-style: italic  
 =ptn
 	font-family: 'PT Sans Narrow', Arial, sans-serif 
 body
@@ -65,10 +68,8 @@ $brown: #825b23
 %in
 	width: 960px
 	margin: 0 auto
-// =sprite-loop
-// 	@each $ico in $icons
-// 		.icon-#{$ico}
-// 			+s(#{$ico})
+%caps
+	text-transform: uppercase 
 $ico: logo mail phone
 =sprite-loop
 	@each $i in $ico
@@ -78,7 +79,20 @@ $ico: logo mail phone
 .out
 	width: 100% 
 	+sprite-loop
-	
+//blocks
+.button 
+	@extend %caps
+	height: 40px 
+	border: 1px solid #655638
+	+border-radius(7px)
+	+box-shadow(1px 2px 3px 0 #45403c, 1px 1px 3px #fff inset, -1px -1px 3px 0 #8f7b40 inset )
+	+gh(#e4d28f, #debb61)
+	padding: 0 6px 
+	color: #3d3837
+	+pt-b
+	font-size: 15px 
+
+
 
 //------topline
 .topline
@@ -117,8 +131,6 @@ $ico: logo mail phone
 	background-color: #6e582c
 	+filter-gradient(#6e582c, #6e582c, horizontal)
 	+background-image(linear-gradient(left,  #6e582c 45%,#866728 59%,#6e582c 73%))
-
-
 	+box-shadow(0 -1px 1px #5b4925)
 	.nav__in
 		@extend %in
