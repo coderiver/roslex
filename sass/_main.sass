@@ -86,6 +86,122 @@
 			position: relative
 			top: 48px 
 			right: 43px 
+			
+//-----rates
+
+.rates
+	background-image: url(../img/rates_bg.png)
+	height: 660px 
+	.rates__in
+		@extend %in
+	.rates__header
+		color: #282620
+		text-align: center
+		position: relative
+		+pt-b
+		font-size: 21px
+		@extend %caps 
+		padding: 40px 0
+		&:before, &:after
+			content: ''
+			width: 292px
+			height: 2px
+			background-color: #282620 
+			display: inline-block 
+			position: absolute
+			top: 50%
+			+translate(0, -50%) 
+		&:before
+			left: 0
+		&:after
+			right: 0
+	.rates__body
+		font-size: 0
+		margin: 0 -8px 
+	.price
+		display: inline-block
+		padding: 0 7px 
+	.price_item
+		// display: inline-block
+		// margin: 0 7px 
+		width: 230px
+		height: 510px 
+		vertical-align: top 
+		text-align: center
+		+border-radius(10px)
+		background-color: rgba(#fff, .7)
+		+box-shadow(0 0 30px rgba(#000, .5))
+		.price__item_in
+			padding: 8px
+			position: relative
+			height: 100%
+			display: table
+		.price_item__header
+			width: 100%
+			height: 65px 
+			+border-radius(10px)
+			background-color: #E8E6E1 
+			text-align: center
+			display: table
+			h3
+				font-size: 16px
+				+pt-b
+				color: $brown 
+				display: table-cell
+				vertical-align: middle
+				text-align: center
+		.price_item__info
+			margin-top: 15px
+			li
+				+ptn
+				font-size: 14px 
+				color: #282620 
+				padding: 5px 0
+				border-bottom: 1px solid #282620 
+				&:last-child
+					border-bottom: 0 
+		.price_item__foo
+			position: absolute
+			bottom: 0px
+			width: 93% 
+			// margin-left: calc(50% - 8px)
+			// width: 100% 
+			// +translate(-50%, 0) 
+			// position: relative
+			// width: 100% 
+			// vertical-align: bottom
+			// display: table-row
+			.price_item__foo_text
+				width: 100%
+				height: 86px 
+				padding-top: 10px  
+				+border-radius(10px)
+				background-color: #ede3d8
+				.brown
+					color: #906D3B
+					+pt
+					font-size: 14px 
+					span
+						color: #282620 
+				.cross
+					text-decoration: line-through
+				.price_item__num
+					+pt
+					font-size: 22px  
+				// .price_item__date
+			.button
+				// position: absolute
+				width: 200px 
+				position: relative
+				top: -10px 
+				cursor: pointer
+				color: $brown 
+				+pt-b
+				font-size: 22px 
+
+
+		
+		
 
 
 

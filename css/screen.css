@@ -24,9 +24,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
-.topline .topline__in, .nav .nav__in, .promo .promo__in { width: 960px; margin: 0 auto; }
+.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in { width: 960px; margin: 0 auto; }
 
-.button { text-transform: uppercase; }
+.button, .rates .rates__header { text-transform: uppercase; }
 
 .out { width: 100%; }
 .out .icon-logo { background: url('../img/icons-seed526e5db.png') 0 -30px no-repeat; width: 169px; height: 47px; display: inline-block; }
@@ -77,3 +77,25 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .promo .promo__we { position: absolute; right: 170px; top: 0; }
 .promo .promo__we .promo__we-man { background: url("../img/promo__man.png") no-repeat 0 0; width: 318px; height: 524px; position: relative; top: 10px; display: inline-block; }
 .promo .promo__we .promo__we-embl { background: url("../img/promo__emb.png") no-repeat 0 0; width: 161px; height: 196px; display: inline-block; vertical-align: top; position: relative; top: 48px; right: 43px; }
+
+.rates { background-image: url(../img/rates_bg.png); height: 660px; }
+.rates .rates__header { color: #282620; text-align: center; position: relative; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 21px; padding: 40px 0; }
+.rates .rates__header:before, .rates .rates__header:after { content: ""; width: 292px; height: 2px; background-color: #282620; display: inline-block; position: absolute; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
+.rates .rates__header:before { left: 0; }
+.rates .rates__header:after { right: 0; }
+.rates .rates__body { font-size: 0; margin: 0 -8px; }
+.rates .price { display: inline-block; padding: 0 7px; }
+.rates .price_item { width: 230px; height: 510px; vertical-align: top; text-align: center; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; background-color: rgba(255, 255, 255, 0.7); -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+.rates .price_item .price__item_in { padding: 8px; position: relative; height: 100%; display: table; }
+.rates .price_item .price_item__header { width: 100%; height: 65px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; background-color: #e8e6e1; text-align: center; display: table; }
+.rates .price_item .price_item__header h3 { font-size: 16px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #825b23; display: table-cell; vertical-align: middle; text-align: center; }
+.rates .price_item .price_item__info { margin-top: 15px; }
+.rates .price_item .price_item__info li { font-family: "PT Sans Narrow", Arial, sans-serif; font-size: 14px; color: #282620; padding: 5px 0; border-bottom: 1px solid #282620; }
+.rates .price_item .price_item__info li:last-child { border-bottom: 0; }
+.rates .price_item .price_item__foo { position: absolute; bottom: 0px; width: 93%; }
+.rates .price_item .price_item__foo .price_item__foo_text { width: 100%; height: 86px; padding-top: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; background-color: #ede3d8; }
+.rates .price_item .price_item__foo .price_item__foo_text .brown { color: #906d3b; font-family: "PT Sans", Arial, sans-serif; font-size: 14px; }
+.rates .price_item .price_item__foo .price_item__foo_text .brown span { color: #282620; }
+.rates .price_item .price_item__foo .price_item__foo_text .cross { text-decoration: line-through; }
+.rates .price_item .price_item__foo .price_item__foo_text .price_item__num { font-family: "PT Sans", Arial, sans-serif; font-size: 22px; }
+.rates .price_item .price_item__foo .button { width: 200px; position: relative; top: -10px; cursor: pointer; color: #825b23; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 22px; }
