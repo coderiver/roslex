@@ -343,14 +343,49 @@
 			li
 				display: inline-block
 				padding: 7px 32px 
-		  
-		
+				
+
 
 .partners
+	padding-bottom: 20px 
 	.partners__in
 		@extend %in
 		text-align: center
-		padding-top: 30px 
+		padding-top: 13px 
+	.partners__header
+		position: relative
+		z-index: 1
+		span
+			background-color: #FEFDFD
+		&:before
+			content: ''
+			display: block
+			// z-index: -2 
+			width: 93% 
+			height: 10px 
+			background-color: #FEFDFD 
+			position: absolute
+			+box-shadow(0 -1px 15px rgba(0,0,0, .8))
+			+border-radius(50%)
+			top: 30px 
+			z-index: -2 
+			left: 50%
+			+translate(-50%,0) 
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 20px
+			background-color: #FEFDFD  
+			position: absolute 
+			top: 34px
+			z-index: -1 
+			// +border-radius(10px)
+			 
+	.partners__list
+		+png(partners)
+		margin: 0 auto
+	 
 		
 		
 		  
