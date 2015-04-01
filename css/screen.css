@@ -78,7 +78,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .promo .promo__info .promo__info-form { width: 100%; }
 .promo .promo__info .promo__info-form p { text-align: center; }
 .promo .promo__info .promo__info-form .time_to { font-family: "PT Sans", Arial, sans-serif; font-style: italic; color: #dedcda; font-size: 14px; margin-bottom: 10px; }
-.promo .promo__info .form__timer { text-align: center; }
+.promo .promo__info .form__timer { text-align: center; height: 71px; }
+.promo .promo__info .form__timer figcaption { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 9px; color: white; }
+.promo .promo__info .form__timer figure { width: 84px !important; max-width: 84px !important; }
+.promo .promo__info .form__timer figure li { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #424242; font-size: 40px; padding-top: 3px; }
+.promo .promo__info .form__timer figure > div { margin-right: 0 !important; height: 49px !important; background-color: transparent; background-image: url("../img/timer_bg.png"); border: 0; }
+.promo .promo__info .form__timer span { display: none; }
 .promo .promo__info .form__footer { margin-top: 15px; font-family: "PT Sans", Arial, sans-serif; color: white; font-size: 13px; }
 .promo .promo__we { position: absolute; right: 170px; top: 0; }
 .promo .promo__we .promo__we-man { background: url("../img/promo__man.png") no-repeat 0 0; width: 318px; height: 524px; position: relative; top: 10px; display: inline-block; }
@@ -113,7 +118,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .action .action__header .brown { color: #825b23; }
 .action .action__form .form__inputs { margin: 0 auto; }
 .action .action__form .action_end { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 21px; color: #3d3837; margin: 5px 0; }
-.action .action__form .form__timer_size_big { background: url("../img/timer_big.png") no-repeat 0 0; width: 394px; height: 90px; margin: 0 auto; }
+.action .action__form .form__timer_size_big { height: 90px; margin: 0 auto; }
+.action .action__form .form__timer_size_big figcaption { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 9px; color: #825b23; }
+.action .action__form .form__timer_size_big figure { width: 101px !important; max-width: 101px !important; display: inline-block; }
+.action .action__form .form__timer_size_big figure li { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #424242; font-size: 50px; height: 53px; padding-left: 3px; }
+.action .action__form .form__timer_size_big figure > div { overflow: hidden; margin-right: 0 !important; padding-left: 10px; height: 68px !important; background-color: transparent; background-image: url("../img/timer_big_bg.png"); border: 0; }
+.action .action__form .form__timer_size_big span { display: none; }
 .action .action__form .button { width: 330px; margin-top: 15px; margin-left: -6px; }
 
 .guarantees { background-color: #f9f9f9; border-top: 1px solid #825b23; border-bottom: 1px solid #825b23; padding-bottom: 25px; }
