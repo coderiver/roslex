@@ -263,8 +263,10 @@
 //-----about
 .about
 	background-image: url('../img/about_bg.png')
+	background-color: #FEFDFD 
 	// background-position: top center 
-	background-position-x: 45%  
+	background-position-x: 45% 
+	background-repeat: no-repeat  
 	.about__header
 		font-size: 44px
 		+pt-b
@@ -275,10 +277,10 @@
 		@extend %in
 		text-align: center
 	.work__header
-		padding-top: 25px 
+		padding-top: 11px 
 	.work__form
 		+png(work_form)
-		margin: -25px auto 0
+		margin: -28px auto 0
 		font-size: 0
 		
 		.work__item
@@ -311,6 +313,44 @@
 		font-size: 15px
 		letter-spacing: 1px  
 		cursor: pointer
+		
+.documentation
+	&:after
+		content: ''
+		display: block
+		height: 5px
+		margin-top: 10px   
+		background-color: #6e582c
+		+box-shadow(0 0 3px 0px #4f3f20 inset)
+	.documentation__in
+		text-align: center
+		padding-top: 58px 
+	.documentation__header
+		padding-bottom: 33px 
+		letter-spacing: -3px 
+	.documentation__item_header
+		+pt-b
+		color: #FFF
+		font-size: 18px 
+		background-color: rgba(#6e582c, .5)
+		+box-shadow(0 0 3px 0px rgba(#4f3f20, .5) inset)
+		// margin-bottom: 10px
+	.documentation__item_wrap
+		@extend %in
+		.documentation__item_imgs
+			font-size: 0
+			margin: 0 -20px 
+			li
+				display: inline-block
+				padding: 7px 32px 
+		  
+		
+
+.partners
+	.partners__in
+		@extend %in
+		text-align: center
+		padding-top: 30px 
 		
 		
 		  
