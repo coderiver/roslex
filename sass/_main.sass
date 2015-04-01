@@ -390,6 +390,8 @@
 //-----feedbacks
 .feedbacks
 	background-color: #C5BCAB 
+	padding-bottom: 60px
+	overflow: hidden  
 	.feedbacks__header
 		padding-top: 35px 
 		+pt-b
@@ -399,6 +401,8 @@
 		+background-image(radial-gradient(45px 50px, #816327 10px, #524221 30px))
 		+background-clip(text)
 		color: transparent
+	.slider
+		max-width: 100% 
 	.slider__top
 		margin-bottom: 28px 
 	.feedback
@@ -406,6 +410,11 @@
 		height: 160px 
 		background-color: #FFF
 		display: inline-block 
+		margin: 0 10px 
+		cursor: pointer
+		&:hover
+			+box-shadow(0 0 0 2px #634813)
+			+border-radius(3px)
 		.feedback__author_photo
 			display: table-cell
 			vertical-align: top

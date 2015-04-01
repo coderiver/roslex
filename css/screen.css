@@ -153,10 +153,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .partners .partners__header:after { content: ""; display: block; width: 100%; height: 20px; background-color: #fefdfd; position: absolute; top: 34px; z-index: -1; }
 .partners .partners__list { background: url("../img/partners.png") no-repeat 0 0; width: 921px; height: 307px; margin: 0 auto; }
 
-.feedbacks { background-color: #c5bcab; }
+.feedbacks { background-color: #c5bcab; padding-bottom: 60px; overflow: hidden; }
 .feedbacks .feedbacks__header { padding-top: 35px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 31px; text-align: center; background-image: -moz-radial-gradient(45px 50px, #816327 10px, #524221 30px); background-image: -webkit-radial-gradient(45px 50px, #816327 10px, #524221 30px); background-image: radial-gradient(45px 50px, #816327 10px, #524221 30px); -moz-background-clip: text; -o-background-clip: text; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.feedbacks .slider { max-width: 100%; }
 .feedbacks .slider__top { margin-bottom: 28px; }
-.feedbacks .feedback { width: 500px; height: 160px; background-color: white; display: inline-block; }
+.feedbacks .feedback { width: 500px; height: 160px; background-color: white; display: inline-block; margin: 0 10px; cursor: pointer; }
+.feedbacks .feedback:hover { -moz-box-shadow: 0 0 0 2px #634813; -webkit-box-shadow: 0 0 0 2px #634813; box-shadow: 0 0 0 2px #634813; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
 .feedbacks .feedback .feedback__author_photo { display: table-cell; vertical-align: top; padding-top: 17px; padding-left: 17px; }
 .feedbacks .feedback .feedback__photo_wrap { width: 130px; height: 130px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; border: 2px solid white; -moz-box-shadow: 0 0 24px #aaaaaa; -webkit-box-shadow: 0 0 24px #aaaaaa; box-shadow: 0 0 24px #aaaaaa; }
 .feedbacks .feedback .feedback__text { display: table-cell; vertical-align: top; padding: 16px 12px 32px 0; padding-top: 16px; padding-left: 32px; }

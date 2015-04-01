@@ -1,18 +1,21 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
-
-	// function scrollFixedElements() {
-	//     var scroll_left = $(this).scrollLeft();
-	//     $(".fixed-element").css({
-	//         left: -scroll_left
-	//     });
-	// }
-	// scrollFixedElements();
-	// $(window).scroll(function(){
-	//     scrollFixedElements()
-	// });
-
+	$('.slider__top').slick({
+	  slidesToShow: 3,
+	  centerMode: true,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
+	  variableWidth: true,
+   arrows: false,
+});
+		$('.slider__bottom').slick({
+	  slidesToShow: 3,
+	  centerMode: true,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2500,
+	  variableWidth: true,
+   arrows: false,
+});
 });
