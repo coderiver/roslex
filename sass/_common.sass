@@ -159,6 +159,34 @@ $ico: logo mail phone
 					text-decoration: underline
 			&:last-child a:after
 				display: none
+
+.form
+	text-align: center
+	.form__inputs
+		width: 100% 
+		text-align: center
+		&_in
+			padding-top: 16px 
+		input
+			+border-radius(8px)
+			font-size: 18px 
+			text-indent: 10px  
+			padding: 5px  0
+			width: 90%
+			+pt
+			+box-shadow(1px 1px 1px 0 #8c8c8c inset)
+			margin-bottom: 10px 
+	.form__inputs_regular
+		+png(form__inputs)
+	.form__inputs_dbrown
+		+png(action_tooltip)
+		.form__inputs_in
+			padding-top: 26px
+		input
+			margin-bottom: 15px 
+	.button 
+		margin-top: 10px 
+		letter-spacing: 1px 
 				
 				
 

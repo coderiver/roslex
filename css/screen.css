@@ -24,7 +24,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
-.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in { width: 960px; margin: 0 auto; }
+.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in, .action .action__in { width: 960px; margin: 0 auto; }
 
 .button, .rates .rates__header { text-transform: uppercase; }
 
@@ -52,6 +52,16 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .nav .nav__list li a:hover { text-decoration: underline; }
 .nav .nav__list li:last-child a:after { display: none; }
 
+.form { text-align: center; }
+.form .form__inputs { width: 100%; text-align: center; }
+.form .form__inputs_in { padding-top: 16px; }
+.form .form__inputs input { -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; font-size: 18px; text-indent: 10px; padding: 5px 0; width: 90%; font-family: "PT Sans", Arial, sans-serif; -moz-box-shadow: 1px 1px 1px 0 #8c8c8c inset; -webkit-box-shadow: 1px 1px 1px 0 #8c8c8c inset; box-shadow: 1px 1px 1px 0 #8c8c8c inset; margin-bottom: 10px; }
+.form .form__inputs_regular { background: url("../img/form__inputs.png") no-repeat 0 0; width: 427px; height: 135px; }
+.form .form__inputs_dbrown { background: url("../img/action_tooltip.png") no-repeat 0 0; width: 423px; height: 164px; }
+.form .form__inputs_dbrown .form__inputs_in { padding-top: 26px; }
+.form .form__inputs_dbrown input { margin-bottom: 15px; }
+.form .button { margin-top: 10px; letter-spacing: 1px; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
@@ -68,11 +78,6 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .promo .promo__info .promo__info-form p { text-align: center; }
 .promo .promo__info .promo__info-form .time_to { font-family: "PT Sans", Arial, sans-serif; font-style: italic; color: #dedcda; font-size: 14px; margin-bottom: 10px; }
 .promo .promo__info .form__timer { text-align: center; }
-.promo .promo__info form { text-align: center; }
-.promo .promo__info form .form__inputs { width: 100%; background: url("../img/form__inputs.png") no-repeat 0 0; width: 427px; height: 135px; text-align: center; }
-.promo .promo__info form .form__inputs_in { padding-top: 16px; }
-.promo .promo__info form .form__inputs input { -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; font-size: 18px; text-indent: 10px; padding: 5px 0; width: 90%; font-family: "PT Sans", Arial, sans-serif; -moz-box-shadow: 1px 1px 1px 0 #8c8c8c inset; -webkit-box-shadow: 1px 1px 1px 0 #8c8c8c inset; box-shadow: 1px 1px 1px 0 #8c8c8c inset; margin-bottom: 10px; }
-.promo .promo__info form .button { margin-top: 10px; letter-spacing: 1px; }
 .promo .promo__info .form__footer { margin-top: 15px; font-family: "PT Sans", Arial, sans-serif; color: white; font-size: 13px; }
 .promo .promo__we { position: absolute; right: 170px; top: 0; }
 .promo .promo__we .promo__we-man { background: url("../img/promo__man.png") no-repeat 0 0; width: 318px; height: 524px; position: relative; top: 10px; display: inline-block; }
@@ -99,3 +104,13 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .rates .price_item .price_item__foo .price_item__foo_text .cross { text-decoration: line-through; }
 .rates .price_item .price_item__foo .price_item__foo_text .price_item__num { font-family: "PT Sans", Arial, sans-serif; font-size: 22px; }
 .rates .price_item .price_item__foo .button { width: 200px; position: relative; top: -10px; cursor: pointer; color: #825b23; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 22px; }
+
+.action { background-image: url(../img/action_bg.png); background-repeat: no-repeat; background-position: top center; height: 470px; }
+.action .action__in { padding-top: 10px; text-align: center; }
+.action .action__header { width: 730px; padding: 10px 0; background-color: #f3f0e9; margin: 0 auto; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 30px; text-align: center; }
+.action .action__header .red { color: #fd3f49; }
+.action .action__header .brown { color: #825b23; }
+.action .action__form .form__inputs { margin: 0 auto; }
+.action .action__form .action_end { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 21px; color: #3d3837; margin: 5px 0; }
+.action .action__form .form__timer_size_big { background: url("../img/timer_big.png") no-repeat 0 0; width: 394px; height: 90px; margin: 0 auto; }
+.action .action__form .button { width: 330px; margin-top: 15px; margin-left: -6px; }

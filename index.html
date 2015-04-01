@@ -42,13 +42,13 @@
 		<h1 class="promo__header"><span class="promo__header_big">ЛИКВИДАЦИЯ ЮРИДИЧЕСКИХ ЛИЦ:</span><br><span class="promo__header_small">ПРОФЕСИОНАЛЬНО, ЗАКОННО, БЕЗ ПОСРЕДНИКОВ</span></h2>
 		<div class="promo__info">
 			<p class="promo__info-text"><span class="promo__info-text_action">АКЦИЯ</span>10% СКИДКА НА УСЛУГИ<br>ВЫЕЗД ЮРИСТА В ПОДАРОК!</p>
-			<div class="promo__info-form form form_size_small">
+			<div class="promo__info-form form_size_small">
 				<p class="time_to">до конца акции осталось:</p>
 				<div class="form__timer">
 					<img src="img/timer.png" alt="">
 				</div>
-				<form action="">
-					<div class="form__inputs"><div class="form__inputs_in">
+				<form action="" class="form">
+					<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
 						<input type="text" placeholder="Введите имя">
 						<input type="text" placeholder="Введите телефон">
 					</div></div>
@@ -175,15 +175,16 @@
 	
 	<!-- BEGIN action  -->
 	<div class="action"><div class="action__in">
-		<h1 class="action__header"><span class="red">АКЦИЯ</span><span class="brown"> - 10% СКИДКА НА УСЛУГИ ВЫЕЗД ЮРИСТА В ПОДАРОК</span></h1>
-		<div class="promo__info-form form form_size_small">
-			<p>до конца акции осталось</p>
+		<h1 class="action__header"><span class="red">АКЦИЯ</span><span class="brown"> - 10% СКИДКА НА УСЛУГИ<br>ВЫЕЗД ЮРИСТА В ПОДАРОК</span></h1>
+		<div class="action__form form_size_small">
+			<p class="action_end">до конца акции осталось</p>
 			<div class="form__timer form__timer_size_big"></div>
-			<form action="">
+			<form action="" class="form">
 				<div class="form__inputs form__inputs_dbrown">
+					<div class="form__inputs_in">
 					<input type="text" placeholder="Введите имя">
 					<input type="text" placeholder="Введите телефон">
-				</div>
+				</div></div>
 				<input type="submit" class="button" value="получить консультацию">
 			</form>
 		</div>

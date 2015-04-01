@@ -44,26 +44,7 @@
 				margin-bottom: 10px  
 		.form__timer
 			text-align: center
-		form
-			text-align: center
-			.form__inputs
-				width: 100% 
-				+png(form__inputs)
-				text-align: center
-				&_in
-					padding-top: 16px 
-				input
-					+border-radius(8px)
-					font-size: 18px 
-					text-indent: 10px  
-					padding: 5px  0
-					width: 90%
-					+pt
-					+box-shadow(1px 1px 1px 0 #8c8c8c inset)
-					margin-bottom: 10px 
-			.button 
-				margin-top: 10px 
-				letter-spacing: 1px 
+
 		.form__footer
 			margin-top: 15px 
 			+pt
@@ -188,9 +169,7 @@
 				.price_item__num
 					+pt
 					font-size: 22px  
-				// .price_item__date
 			.button
-				// position: absolute
 				width: 200px 
 				position: relative
 				top: -10px 
@@ -199,6 +178,45 @@
 				+pt-b
 				font-size: 22px 
 
+
+//-----action
+.action
+	background-image: url(../img/action_bg.png) 
+	background-repeat: no-repeat
+	background-position: top center 
+	height: 470px 
+	.action__in
+		@extend %in
+		padding-top: 10px 
+		text-align: center
+	.action__header
+		width: 730px
+		padding: 10px 0
+		background-color: #f3f0e9
+		margin: 0 auto 
+		+border-radius(10px)
+		+pt-b
+		font-size: 30px 
+		text-align: center
+		.red
+			color: #FD3F49 
+		.brown
+			color: $brown 
+	.action__form
+		.form__inputs
+			margin: 0 auto 
+		.action_end
+			+pt-b
+			font-size: 21px
+			color: #3d3837
+			margin: 5px  0
+		.form__timer_size_big
+			+png(timer_big)
+			margin: 0 auto 
+		.button
+			width: 330px 
+			margin-top: 15px 
+			margin-left: -6px 
 
 		
 		
