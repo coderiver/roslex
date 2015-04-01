@@ -24,7 +24,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
-.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in, .action .action__in, .guarantees .guarantees__in { width: 960px; margin: 0 auto; }
+.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in, .action .action__in, .guarantees .guarantees__in, .work .work__in { width: 960px; margin: 0 auto; }
 
 .button, .rates .rates__header { text-transform: uppercase; }
 
@@ -123,3 +123,16 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .guarantees .guarantees__item .guarantees__item_header { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 21px; color: #3d3837; }
 .guarantees .guarantees__item .guarantees__item_descr { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 15px; line-height: 1em; }
 .guarantees .guarantees__item .guarantees__item_pic i { background: url("../img/guar_1.png") no-repeat 0 0; width: 96px; height: 97px; display: inline-block; }
+
+.about { background-image: url("../img/about_bg.png"); background-position-x: 45%; }
+.about .about__header { font-size: 44px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #825b23; }
+
+.work .work__in { text-align: center; }
+.work .work__header { padding-top: 25px; }
+.work .work__form { background: url("../img/work_form.png") no-repeat 0 0; width: 929px; height: 320px; margin: -25px auto 0; font-size: 0; }
+.work .work__form .work__item { display: inline-block; width: 155px; margin-top: 166px; vertical-align: top; }
+.work .work__form .work__item .work__item_header { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 24px; color: #3d3837; margin-bottom: 10px; }
+.work .work__form .work__item .work__item_descr { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 16px; line-height: 0.9em; }
+.work .work__form .work__item:nth-of-type(4) { position: relative; left: 12px; }
+.work .work__form .work__item:nth-of-type(5) { position: relative; left: 42px; }
+.work .button { width: 328px; position: relative; top: -30px; left: 13px; width: 333px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 1px; cursor: pointer; }

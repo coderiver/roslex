@@ -259,6 +259,61 @@
 			i
 				+png(guar_1)
 				display: inline-block
+
+//-----about
+.about
+	background-image: url('../img/about_bg.png')
+	// background-position: top center 
+	background-position-x: 45%  
+	.about__header
+		font-size: 44px
+		+pt-b
+		color: $brown   
+
+.work
+	.work__in
+		@extend %in
+		text-align: center
+	.work__header
+		padding-top: 25px 
+	.work__form
+		+png(work_form)
+		margin: -25px auto 0
+		font-size: 0
+		
+		.work__item
+			display: inline-block
+			width: 155px 
+			margin-top: 166px 
+			vertical-align: top
+			.work__item_header
+				+pt-b
+				font-size: 24px 
+				color: #3d3837
+				margin-bottom: 10px 
+			.work__item_descr
+				+pt-i
+				font-size: 16px 
+				line-height: .9em 
+			&:nth-of-type(4)
+				position: relative
+				left: 12px 
+			&:nth-of-type(5)
+				position: relative
+				left: 42px 
+	.button
+		width: 328px 
+		position: relative
+		top: -30px
+		left: 13px 
+		width: 333px  
+		+pt-b
+		font-size: 15px
+		letter-spacing: 1px  
+		cursor: pointer
+		
+		
+		  
 			
 
 		
