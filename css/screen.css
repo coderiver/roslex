@@ -133,7 +133,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .guarantees .guarantees__item { display: inline-block; vertical-align: top; text-align: center; width: 270px; padding: 0 30px; margin-bottom: 20px; }
 .guarantees .guarantees__item .guarantees__item_header { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 21px; color: #3d3837; }
 .guarantees .guarantees__item .guarantees__item_descr { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 15px; line-height: 1em; }
-.guarantees .guarantees__item .guarantees__item_pic i { background: url("../img/guar_1.png") no-repeat 0 0; width: 96px; height: 97px; display: inline-block; }
+.guarantees .guarantees__item .guarantees__item_pic i { display: inline-block; }
+.guarantees .guarantees__item .guarantees__item_pic i.guar_1 { background: url("../img/guar_1.png") no-repeat 0 0; width: 96px; height: 97px; }
+.guarantees .guarantees__item .guarantees__item_pic i.guar_2 { background: url("../img/guar_2.png") no-repeat 0 0; width: 96px; height: 97px; }
+.guarantees .guarantees__item .guarantees__item_pic i.guar_3 { background: url("../img/guar_3.png") no-repeat 0 0; width: 96px; height: 97px; }
+.guarantees .guarantees__item .guarantees__item_pic i.guar_4 { background: url("../img/guar_4.png") no-repeat 0 0; width: 96px; height: 97px; }
+.guarantees .guarantees__item .guarantees__item_pic i.guar_5 { background: url("../img/guar_5.png") no-repeat 0 0; width: 96px; height: 97px; }
 
 .about { background-image: url("../img/about_bg.png"); background-color: #fefdfd; background-position-x: 45%; background-repeat: no-repeat; }
 .about .about__header { font-size: 44px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #825b23; }
