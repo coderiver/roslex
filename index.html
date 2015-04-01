@@ -325,11 +325,17 @@
 	<div class="feedbacks">
 		<p class="feedbacks__header">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</p>
 		<div class="slider">
-			<div class="slider__top">
+<!-- 			<div class="slider__top cycle-slideshow" 
+					data-cycle-fx="carousel"
+			    data-cycle-timeout="1000"
+			    data-cycle-slides=".feedback"
+				 	data-allow-wrap="false"
+			    > -->
+			    <div class="slider__top cycle-slideshow">
 			<div class="feedback">
-				<div class="feedback__author_photo">
-					<img src="" alt="">
-				</div>
+				<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+					<img src="img/feed_5.png" alt="">
+				</div></div>
 				<div class="feedback__text">
 					<h2 class="feedback__author_name">Василий Петров</h2>
 					<p class="feedback__review">
@@ -338,9 +344,9 @@
 				</div>
 			</div>
 				<div class="feedback">
-					<div class="feedback__author_photo">
-						<img src="" alt="">
-					</div>
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_1.png" alt="">
+					</div></div>
 					<div class="feedback__text">
 						<h2 class="feedback__author_name">Тамара Сергеева</h2>
 						<p class="feedback__review">
@@ -349,9 +355,9 @@
 					</div>
 				</div>
 				<div class="feedback">
-					<div class="feedback__author_photo">
-						<img src="" alt="">
-					</div>
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_2.png" alt="">
+					</div></div>
 					<div class="feedback__text">
 						<h2 class="feedback__author_name">Сергей Веселов</h2>
 						<p class="feedback__review">
@@ -360,9 +366,9 @@
 					</div>
 				</div>
 				<div class="feedback">
-					<div class="feedback__author_photo">
-						<img src="" alt="">
-					</div>
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_3.png" alt="">
+					</div></div>
 					<div class="feedback__text">
 						<h2 class="feedback__author_name">Татьяна Морозова</h2>
 						<p class="feedback__review">
@@ -371,9 +377,9 @@
 					</div>
 				</div>
 				<div class="feedback">
-					<div class="feedback__author_photo">
-						<img src="" alt="">
-					</div>
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_1.png" alt="">
+					</div></div>
 					<div class="feedback__text">
 						<h2 class="feedback__author_name">Тамара Сергеева</h2>
 						<p class="feedback__review">
@@ -382,11 +388,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="slider__bottom">
+			<!-- <div class="slider__bottom cycle-slideshow" 
+			data-cycle-fx="carousel"
+			    data-cycle-timeout="1000"
+			    data-cycle-slides=".feedback"
+			    > -->
+			    <div class="slider__bottom">
 				<div class="feedback">
-					<div class="feedback__author_photo">
-						<img src="" alt="">
-					</div>
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_1.png" alt="">
+					</div></div>
 					<div class="feedback__text">
 						<h2 class="feedback__author_name">Тамара Сергеева</h2>
 						<p class="feedback__review">
@@ -395,9 +406,9 @@
 					</div>
 				</div>
 				<div class="feedback">
-					<div class="feedback__author_photo">
-						<img src="" alt="">
-					</div>
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_3.png" alt="">
+					</div></div>
 					<div class="feedback__text">
 						<h2 class="feedback__author_name">Татьяна Морозова</h2>
 						<p class="feedback__review">
@@ -406,9 +417,9 @@
 					</div>
 				</div>
 				<div class="feedback">
-					<div class="feedback__author_photo">
-						<img src="" alt="">
-					</div>
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_4.png" alt="">
+					</div></div>
 					<div class="feedback__text">
 						<h2 class="feedback__author_name">Алексей Белозеров</h2>
 						<p class="feedback__review">
@@ -417,9 +428,9 @@
 					</div>
 				</div>
 				<div class="feedback">
-					<div class="feedback__author_photo">
-						<img src="" alt="">
-					</div>
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_5.png" alt="">
+					</div></div>
 					<div class="feedback__text">
 						<h2 class="feedback__author_name">Василий Петров</h2>
 						<p class="feedback__review">
@@ -428,9 +439,9 @@
 					</div>
 				</div>
 				<div class="feedback">
-					<div class="feedback__author_photo">
-						<img src="" alt="">
-					</div>
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_2.png" alt="">
+					</div></div>
 					<div class="feedback__text">
 						<h2 class="feedback__author_name">Сергей Веселов</h2>
 						<p class="feedback__review">
@@ -445,10 +456,11 @@
 
 	<!-- BEGIN team  -->
 	<div class="team">
-		<p class="team__header">НАШИ ЮРИСТЫ</p>
+		<p class="team__header"><span>НАШИ ЮРИСТЫ</span></p>
+		<div class="team__list_wrap">
 		<ul class="team__list">
 			<li class="member">
-				<div class="member__photo"><img src="" alt=""></div>
+				<div class="member__photo"><img src="img/team_1.png" alt=""></div>
 				<div class="member__about">
 					<p class="member__surname">Петрова</p>
 					<p class="member__name">Татьяна Олеговна</p>
@@ -456,7 +468,7 @@
 				</div>
 			</li>
 			<li class="member">
-				<div class="member__photo"><img src="" alt=""></div>
+				<div class="member__photo"><img src="img/team_2.png" alt=""></div>
 				<div class="member__about">
 					<p class="member__surname">Сухарев</p>
 					<p class="member__name">Александр Сергеевич</p>
@@ -464,7 +476,7 @@
 				</div>
 			</li>
 			<li class="member">
-				<div class="member__photo"><img src="" alt=""></div>
+				<div class="member__photo"><img src="img/team_3.png" alt=""></div>
 				<div class="member__about">
 					<p class="member__surname">Ивлев</p>
 					<p class="member__name">Антон Павлович</p>
@@ -472,7 +484,7 @@
 				</div>
 			</li>
 			<li class="member">
-				<div class="member__photo"><img src="" alt=""></div>
+				<div class="member__photo"><img src="img/team_4.png" alt=""></div>
 				<div class="member__about">
 					<p class="member__surname">Скоробогач</p>
 					<p class="member__name">Ефим Анатольевич</p>
@@ -480,14 +492,14 @@
 				</div>
 			</li>
 			<li class="member">
-				<div class="member__photo"><img src="" alt=""></div>
+				<div class="member__photo"><img src="img/team_5.png" alt=""></div>
 				<div class="member__about">
 					<p class="member__surname">Ольхова</p>
 					<p class="member__name">Светлана Юрьевна</p>
 					<p class="member__experience">Опыт работы с 1995 г.</p>
 				</div>
 			</li>
-		</ul>
+		</ul></div>
 	</div>
 	<!-- END team -->
 

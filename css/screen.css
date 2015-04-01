@@ -24,7 +24,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
-.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in, .action .action__in, .guarantees .guarantees__in, .work .work__in, .documentation .documentation__item_wrap, .partners .partners__in { width: 960px; margin: 0 auto; }
+.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in, .action .action__in, .guarantees .guarantees__in, .work .work__in, .documentation .documentation__item_wrap, .partners .partners__in, .team .team__list_wrap { width: 960px; margin: 0 auto; }
 
 .button, .rates .rates__header { text-transform: uppercase; }
 
@@ -151,3 +151,27 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .partners .partners__header:before { content: ""; display: block; width: 93%; height: 10px; background-color: #fefdfd; position: absolute; -moz-box-shadow: 0 -1px 15px rgba(0, 0, 0, 0.8); -webkit-box-shadow: 0 -1px 15px rgba(0, 0, 0, 0.8); box-shadow: 0 -1px 15px rgba(0, 0, 0, 0.8); -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; top: 30px; z-index: -2; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 .partners .partners__header:after { content: ""; display: block; width: 100%; height: 20px; background-color: #fefdfd; position: absolute; top: 34px; z-index: -1; }
 .partners .partners__list { background: url("../img/partners.png") no-repeat 0 0; width: 921px; height: 307px; margin: 0 auto; }
+
+.feedbacks { background-color: #c5bcab; }
+.feedbacks .feedbacks__header { padding-top: 35px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 31px; text-align: center; background-image: -moz-radial-gradient(45px 50px, #816327 10px, #524221 30px); background-image: -webkit-radial-gradient(45px 50px, #816327 10px, #524221 30px); background-image: radial-gradient(45px 50px, #816327 10px, #524221 30px); -moz-background-clip: text; -o-background-clip: text; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.feedbacks .slider__top { margin-bottom: 28px; }
+.feedbacks .feedback { width: 500px; height: 160px; background-color: white; display: inline-block; }
+.feedbacks .feedback .feedback__author_photo { display: table-cell; vertical-align: top; padding-top: 17px; padding-left: 17px; }
+.feedbacks .feedback .feedback__photo_wrap { width: 130px; height: 130px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; border: 2px solid white; -moz-box-shadow: 0 0 24px #aaaaaa; -webkit-box-shadow: 0 0 24px #aaaaaa; box-shadow: 0 0 24px #aaaaaa; }
+.feedbacks .feedback .feedback__text { display: table-cell; vertical-align: top; padding: 16px 12px 32px 0; padding-top: 16px; padding-left: 32px; }
+.feedbacks .feedback .feedback__text .feedback__author_name { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 24px; }
+.feedbacks .feedback .feedback__text .feedback__review { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 12px; line-height: 1.1em; padding-top: 6px; }
+
+.team:after { content: ""; display: block; width: 100%; height: 46px; background-image: url("../img/team_line.png"); background-repeat: no-repeat; background-position-x: 50%; }
+.team .team__header { margin-top: 40px; text-align: center; position: relative; z-index: 1; position: relative; margin-bottom: 36px; }
+.team .team__header:after { content: ""; display: block; position: absolute; width: 100%; top: 7px; border-bottom: 8px solid #6e582c; }
+.team .team__header:before { content: ""; display: block; position: absolute; width: 100%; bottom: 5px; border-top: 8px solid #6e582c; }
+.team .team__header span { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 41px; position: relative; z-index: 2; color: #6e582c; background-color: white; }
+.team .team__list { font-size: 0; margin: 0 -20px; }
+.team .team__list li { display: inline-block; padding: 0 25px; }
+
+.member .member__surname { color: #3d3837; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 21px; }
+.member .member__name { color: #3d3837; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 14px; }
+.member .member__experience { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 11px; color: #989696; }
+.member .member__photo { width: 150px; height: 150px; }
+.member .member__photo img { width: 100%; height: 100%; }

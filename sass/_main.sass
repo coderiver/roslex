@@ -386,7 +386,124 @@
 		+png(partners)
 		margin: 0 auto
 	 
+
+//-----feedbacks
+.feedbacks
+	background-color: #C5BCAB 
+	.feedbacks__header
+		padding-top: 35px 
+		+pt-b
+		font-size: 31px 
+		// color: #524221
+		text-align: center 
+		+background-image(radial-gradient(45px 50px, #816327 10px, #524221 30px))
+		+background-clip(text)
+		color: transparent
+	.slider__top
+		margin-bottom: 28px 
+	.feedback
+		width: 500px 
+		height: 160px 
+		background-color: #FFF
+		display: inline-block 
+		.feedback__author_photo
+			display: table-cell
+			vertical-align: top
+			padding-top: 17px 
+			padding-left: 17px 
+		.feedback__photo_wrap
+			width: 130px 
+			height: 130px
+			+border-radius(50%)
+			border: 2px solid #fff  
+			+box-shadow(0 0 24px #aaa)
+		.feedback__text
+			display: table-cell
+			vertical-align: top
+			padding: 16px 12px 32px  0
+			padding-top: 16px 
+			padding-left: 32px 
+			.feedback__author_name
+				+pt-b
+				font-size: 24px 
+			.feedback__review
+				+pt-i
+				font-size: 12px 
+				line-height: 1.1em
+				padding-top: 6px  
+				
+
+//-----team
+.team
+	&:after
+		content: ''
+		display: block
+		width: 100% 
+		height: 46px 
+		background-image: url('../img/team_line.png') 
+		background-repeat: no-repeat
+		background-position-x: 50%  
+	.team__header
+		margin-top: 40px 
+		text-align: center
+		position: relative
+		z-index: 1 
+		position: relative
+		margin-bottom: 36px 
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			top: 7px
+			border-bottom: 8px solid  #6e582c
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			bottom: 5px
+			border-top: 8px solid  #6e582c
+
+		span
+			+pt-b
+			font-size: 41px
+			position: relative
+			z-index: 2 
+			color: #6E582C 
+			background-color: #FFF 
+	.team__list
+		font-size: 0
+		margin: 0 -20px 
+		li
+			display: inline-block
+			padding: 0 25px 
+	.team__list_wrap
+		@extend %in
+.member
+	.member__surname
+		color: #3d3837 
+		+pt-b
+		font-size: 21px 
+	.member__name
+		color: #3D3837 
+		+pt-b
+		font-size: 14px
+	.member__experience
+		+pt-i
+		font-size: 11px 
+		color: #989696 
+	.member__photo
+		width: 150px 
+		height: 150px
+		img
+			width: 100%
+			height: 100%  
 		
+		
+
+
+
 		
 		  
 			
