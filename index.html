@@ -9,6 +9,7 @@
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 <!-- BEGIN  out-->
@@ -505,7 +506,8 @@
 
 	<!-- BEGIN contacts  -->
 	<div class="contacts">
-	  <div class="map"></div>
+		<p class="contacts__header"><span>КОНТАКТЫ</span></p>
+		<div id="ymap" class="contacts__map"></div>
 	</div>
 	<!-- END contacts -->
 
@@ -528,5 +530,36 @@
 <!-- END out-->
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<script>
+ymaps.ready(init);
+function init () {
+	var map = new ymaps.Map("ymap", {
+            center: [59.92733739, 30.31772910], 
+            zoom: 13,
+            controls: []
+        }),
+ myGeoObject = new ymaps.GeoObject({
+            // Описание геометрии.
+            geometry: {
+                type: "Point",
+                coordinates: [59.92733739, 30.31772910]
+            },
+            // Свойства.
+            
+        });
+
+    map.geoObjects
+        .add(myGeoObject)
+        .add(new ymaps.Placemark([59.92733739, 30.31772910], {
+            balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+        }, {
+            preset: 'islands#icon',
+            iconColor: '#0095b6'
+        }))
+       
+       ;
+}
+</script>
+
 </body>
 </html>

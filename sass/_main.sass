@@ -435,14 +435,6 @@
 
 //-----team
 .team
-	&:after
-		content: ''
-		display: block
-		width: 100% 
-		height: 46px 
-		background-image: url('../img/team_line.png') 
-		background-repeat: no-repeat
-		background-position-x: 50%  
 	.team__header
 		margin-top: 40px 
 		text-align: center
@@ -464,7 +456,6 @@
 			width: 100%
 			bottom: 5px
 			border-top: 8px solid  #6e582c
-
 		span
 			+pt-b
 			font-size: 41px
@@ -498,14 +489,60 @@
 		height: 150px
 		img
 			width: 100%
-			height: 100%  
+			height: 100% 
+			
+//-----contacts
+.contacts
+	.contacts__header
+		text-align: center
+		position: relative
+		height: 116px 
+		background-image: url('../img/contacts_bg.png') 
+		// +png(contatcts_bg)
+		background-position-x: 50%
+		background-color: transparent 
+		// &:after
+		// 	content: ''
+		// 	display: block
+		// 	width: 100% 
+		// 	height: 46px 
+		// 	// background-image: url('../img/team_line.png') 
+		// 	background-repeat: no-repeat
+		// 	background-position-x: 50%
+		// 	position: absolute
+		// 	bottom: -12px 
+		// &:before
+		// 	content: ''
+		// 	display: block
+		// 	width: 100% 
+		// 	height: 46px 
+		// 	// background-image: url('../img/team_line.png') 
+		// 	background-repeat: no-repeat
+		// 	background-position-x: 50%
+		span
+			+pt-b
+			font-size: 41px
+			position: relative
+			top: 46px 
+			z-index: 2 
+			color: #6E582C 
+			background-color: #FFF 
+			text-align: center
+	.contacts__map
+		width: 100%
+		height: 535px 
+		position: relative
+		margin-top: -26px 
+		z-index: -1 
 		
+		 
+			
 		
 
 
 
 		
-		  
+			
 			
 
 		

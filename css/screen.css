@@ -162,7 +162,6 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .feedbacks .feedback .feedback__text .feedback__author_name { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 24px; }
 .feedbacks .feedback .feedback__text .feedback__review { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 12px; line-height: 1.1em; padding-top: 6px; }
 
-.team:after { content: ""; display: block; width: 100%; height: 46px; background-image: url("../img/team_line.png"); background-repeat: no-repeat; background-position-x: 50%; }
 .team .team__header { margin-top: 40px; text-align: center; position: relative; z-index: 1; position: relative; margin-bottom: 36px; }
 .team .team__header:after { content: ""; display: block; position: absolute; width: 100%; top: 7px; border-bottom: 8px solid #6e582c; }
 .team .team__header:before { content: ""; display: block; position: absolute; width: 100%; bottom: 5px; border-top: 8px solid #6e582c; }
@@ -175,3 +174,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .member .member__experience { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 11px; color: #989696; }
 .member .member__photo { width: 150px; height: 150px; }
 .member .member__photo img { width: 100%; height: 100%; }
+
+.contacts .contacts__header { text-align: center; position: relative; height: 116px; background-image: url("../img/contacts_bg.png"); background-position-x: 50%; background-color: transparent; }
+.contacts .contacts__header span { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 41px; position: relative; top: 46px; z-index: 2; color: #6e582c; background-color: white; text-align: center; }
+.contacts .contacts__map { width: 100%; height: 535px; position: relative; margin-top: -26px; z-index: -1; }
