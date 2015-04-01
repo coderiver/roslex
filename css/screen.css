@@ -24,7 +24,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
-.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in, .action .action__in { width: 960px; margin: 0 auto; }
+.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in, .action .action__in, .guarantees .guarantees__in { width: 960px; margin: 0 auto; }
 
 .button, .rates .rates__header { text-transform: uppercase; }
 
@@ -105,7 +105,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .rates .price_item .price_item__foo .price_item__foo_text .price_item__num { font-family: "PT Sans", Arial, sans-serif; font-size: 22px; }
 .rates .price_item .price_item__foo .button { width: 200px; position: relative; top: -10px; cursor: pointer; color: #825b23; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 22px; }
 
-.action { background-image: url(../img/action_bg.png); background-repeat: no-repeat; background-position: top center; height: 470px; }
+.action { background-image: url(../img/action_bg.png); background-repeat: no-repeat; background-position: top center; padding-bottom: 120px; }
 .action .action__in { padding-top: 10px; text-align: center; }
 .action .action__header { width: 730px; padding: 10px 0; background-color: #f3f0e9; margin: 0 auto; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 30px; text-align: center; }
 .action .action__header .red { color: #fd3f49; }
@@ -114,3 +114,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .action .action__form .action_end { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 21px; color: #3d3837; margin: 5px 0; }
 .action .action__form .form__timer_size_big { background: url("../img/timer_big.png") no-repeat 0 0; width: 394px; height: 90px; margin: 0 auto; }
 .action .action__form .button { width: 330px; margin-top: 15px; margin-left: -6px; }
+
+.guarantees { background-color: #f9f9f9; border-top: 1px solid #825b23; border-bottom: 1px solid #825b23; padding-bottom: 25px; }
+.guarantees .guarantees__in { position: relative; }
+.guarantees .guarantees__header { background: url("../img/guarantees_h.png") no-repeat 0 0; width: 507px; height: 125px; position: absolute; top: -78px; text-align: center; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
+.guarantees .guarantees__item_wrap { font-size: 0; padding-top: 73px; margin: 0 -15px; }
+.guarantees .guarantees__item { display: inline-block; vertical-align: top; text-align: center; width: 270px; padding: 0 30px; margin-bottom: 20px; }
+.guarantees .guarantees__item .guarantees__item_header { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 21px; color: #3d3837; }
+.guarantees .guarantees__item .guarantees__item_descr { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 15px; line-height: 1em; }
+.guarantees .guarantees__item .guarantees__item_pic i { background: url("../img/guar_1.png") no-repeat 0 0; width: 96px; height: 97px; display: inline-block; }

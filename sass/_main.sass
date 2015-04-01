@@ -184,7 +184,8 @@
 	background-image: url(../img/action_bg.png) 
 	background-repeat: no-repeat
 	background-position: top center 
-	height: 470px 
+	// height: 470px 
+	padding-bottom: 120px 
 	.action__in
 		@extend %in
 		padding-top: 10px 
@@ -217,6 +218,48 @@
 			width: 330px 
 			margin-top: 15px 
 			margin-left: -6px 
+
+
+//-----guarantees
+.guarantees
+	background-color: #f9f9f9
+	border-top: 1px solid #825b23
+	border-bottom: 1px solid #825b23
+	padding-bottom: 25px 
+	.guarantees__in
+		@extend %in
+		position: relative
+	.guarantees__header
+		+png(guarantees_h)
+		position: absolute
+		top: -78px 
+		text-align: center
+		left: 50%
+		+translate(-50%, 0) 
+	.guarantees__item_wrap
+		font-size: 0
+		padding-top: 73px 
+		margin: 0 -15px 
+	.guarantees__item
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		width: 270px 
+		padding: 0 30px 
+		margin-bottom: 20px 
+		.guarantees__item_header
+			+pt-b
+			font-size: 21px 
+			color: #3D3837 
+		.guarantees__item_descr
+			+pt-i
+			font-size: 15px 
+			line-height: 1em 
+		.guarantees__item_pic
+			i
+				+png(guar_1)
+				display: inline-block
+			
 
 		
 		
