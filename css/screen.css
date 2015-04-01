@@ -24,14 +24,15 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
-.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in, .action .action__in, .guarantees .guarantees__in, .work .work__in, .documentation .documentation__item_wrap, .partners .partners__in, .team .team__list_wrap { width: 960px; margin: 0 auto; }
+.topline .topline__in, .nav .nav__in, .promo .promo__in, .rates .rates__in, .action .action__in, .guarantees .guarantees__in, .work .work__in, .documentation .documentation__item_wrap, .partners .partners__in, .team .team__list_wrap, .footer .footer__in { width: 960px; margin: 0 auto; }
 
-.button, .rates .rates__header { text-transform: uppercase; }
+.button, .rates .rates__header, .footer .footer__form .footer__form_header { text-transform: uppercase; }
 
 .out { width: 100%; }
-.out .icon-logo { background: url('../img/icons-seed526e5db.png') 0 -30px no-repeat; width: 169px; height: 47px; display: inline-block; }
-.out .icon-mail { background: url('../img/icons-seed526e5db.png') 0 -87px no-repeat; width: 25px; height: 17px; display: inline-block; }
-.out .icon-phone { background: url('../img/icons-seed526e5db.png') 0 -114px no-repeat; width: 17px; height: 24px; display: inline-block; }
+.out .icon-logo { background: url('../img/icons-se1f6ce6755.png') 0 -113px no-repeat; width: 169px; height: 47px; display: inline-block; }
+.out .icon-mail { background: url('../img/icons-se1f6ce6755.png') 0 -170px no-repeat; width: 25px; height: 17px; display: inline-block; }
+.out .icon-phone { background: url('../img/icons-se1f6ce6755.png') 0 -197px no-repeat; width: 17px; height: 24px; display: inline-block; }
+.out .icon-loc { background: url('../img/icons-se1f6ce6755.png') 0 -30px no-repeat; width: 46px; height: 73px; display: inline-block; }
 
 .button { height: 40px; border: 1px solid #655638; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; -moz-box-shadow: 1px 2px 3px 0 #45403c, 1px 1px 3px white inset, -1px -1px 3px 0 #8f7b40 inset; -webkit-box-shadow: 1px 2px 3px 0 #45403c, 1px 1px 3px white inset, -1px -1px 3px 0 #8f7b40 inset; box-shadow: 1px 2px 3px 0 #45403c, 1px 1px 3px white inset, -1px -1px 3px 0 #8f7b40 inset; background-image: -moz-linear-gradient(left, #e4d28f, #debb61); background-image: -webkit-linear-gradient(left, #e4d28f, #debb61); background-image: linear-gradient(to right, #e4d28f, #debb61); padding: 0 6px; color: #3d3837; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 15px; }
 
@@ -178,3 +179,15 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .contacts .contacts__header { text-align: center; position: relative; height: 116px; background-image: url("../img/contacts_bg.png"); background-position-x: 50%; background-color: transparent; }
 .contacts .contacts__header span { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 41px; position: relative; top: 46px; z-index: 2; color: #6e582c; background-color: white; text-align: center; }
 .contacts .contacts__map { width: 100%; height: 535px; position: relative; margin-top: -26px; z-index: -1; }
+
+.footer { background-color: #6e582c; *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF6E582C', endColorstr='#FF6E582C'); background-image: -moz-linear-gradient(left, #6e582c 45%, #866728 59%, #6e582c 73%); background-image: -webkit-linear-gradient(left, #6e582c 45%, #866728 59%, #6e582c 73%); background-image: linear-gradient(to right, #6e582c 45%, #866728 59%, #6e582c 73%); padding-bottom: 20px; }
+.footer .footer__in { *zoom: 1; }
+.footer .footer__in:after { content: " "; display: table; clear: both; }
+.footer .footer__adds { float: left; }
+.footer .footer__adds > div { display: inline-block; }
+.footer .footer__adds .footer__adds_txt { color: white; font-size: 24px; padding-top: 11px; padding-left: 14px; line-height: 1em; }
+.footer .footer__adds .footer__adds_txt .adds { font-family: "PT Sans", Arial, sans-serif; font-size: 26px; }
+.footer .footer__adds .footer__adds_txt .phone { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; padding-top: 7px; letter-spacing: 1px; }
+.footer .footer__form { float: right; padding-top: 20px; }
+.footer .footer__form .footer__form_header { font-size: 19px; color: white; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; margin-bottom: 9px; letter-spacing: 1px; }
+.footer .footer__form .footer__form_input { -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; font-size: 18px; text-indent: 10px; padding: 5px 0; width: 387px; font-family: "PT Sans", Arial, sans-serif; -moz-box-shadow: 1px 1px 1px 0 #8c8c8c inset; -webkit-box-shadow: 1px 1px 1px 0 #8c8c8c inset; box-shadow: 1px 1px 1px 0 #8c8c8c inset; }

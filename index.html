@@ -512,21 +512,21 @@
 	<!-- END contacts -->
 
 	<!-- BEGIN footer  -->
-	<div class="footer">
+	<div class="footer"><div class="footer__in">
 	  <div class="footer__adds">
 	  	<div class="loc"><i class="icon-loc"></i></div>
 	  	<div class="footer__adds_txt">
-	  		<p>Санкт-Петербург, Спасский пер. 14, этаж 5. м. «Сенная площадь».</p>
+	  		<p class="adds">Санкт-Петербург, Спасский пер. 14,<br> этаж 5. м. «Сенная площадь».</p>
 	  		<p class="phone">Тел. +7 (812) 457-06-50</p>
 	  	</div>
 	  </div>
 	  <div class="footer__form">
 	  	<p class="footer__form_header">Заказать обратный звонок</p>
-	  	<input type="text" value="Введите телефон" class="footer__form_input">
+	  	<input type="text" placeholder="Введите телефон" class="footer__form_input">
 	  </div>
 	</div>
 	<!-- END footer -->
-</div>
+</div></div>
 <!-- END out-->
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
@@ -534,20 +534,16 @@
 ymaps.ready(init);
 function init () {
 	var map = new ymaps.Map("ymap", {
-            center: [59.92733739, 30.31772910], 
-            zoom: 13,
-            controls: []
-        }),
- myGeoObject = new ymaps.GeoObject({
-            // Описание геометрии.
-            geometry: {
-                type: "Point",
-                coordinates: [59.92733739, 30.31772910]
-            },
-            // Свойства.
-            
-        });
-
+	    center: [59.92733739, 30.31772910], 
+	    zoom: 13,
+	    controls: []
+    }),
+		myGeoObject = new ymaps.GeoObject({
+      geometry: {
+        type: "Point",
+        coordinates: [59.92733739, 30.31772910]
+      },
+    });
     map.geoObjects
         .add(myGeoObject)
         .add(new ymaps.Placemark([59.92733739, 30.31772910], {
@@ -555,9 +551,7 @@ function init () {
         }, {
             preset: 'islands#icon',
             iconColor: '#0095b6'
-        }))
-       
-       ;
+        }));
 }
 </script>
 
