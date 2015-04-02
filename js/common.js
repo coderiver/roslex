@@ -32,43 +32,43 @@ $('.nav__list a').click(function(event){
 $('.js-guaranties').click(function(){
 	var position = $('.guarantees').offset();
 	$('body, html').animate({
-		scrollTop: position.top-100
+		scrollTop: position.top-100-40
 	},1100,'easeInOutCirc');
 });
 $('.js-price').click(function(){
 	var position = $('.rates').offset();
 	$('body, html').animate({
-		scrollTop: position.top
+		scrollTop: position.top-40
 	},1100,'easeInOutCirc');
 });
 $('.js-work').click(function(){
 	var position = $('.work').offset();
 	$('body, html').animate({
-		scrollTop: position.top
+		scrollTop: position.top-40
 	},1100,'easeInOutCirc');
 });
 $('.js-documentation').click(function(){
 	var position = $('.documentation').offset();
 	$('body, html').animate({
-		scrollTop: position.top+45
+		scrollTop: position.top+45-40
 	},1100,'easeInOutCirc');
 });
 $('.js-feedbacks').click(function(){
 	var position = $('.feedbacks').offset();
 	$('body, html').animate({
-		scrollTop: position.top
+		scrollTop: position.top-40
 	},1100,'easeInOutCirc');
 });
 $('.js-team').click(function(){
 	var position = $('.team').offset();
 	$('body, html').animate({
-		scrollTop: position.top
+		scrollTop: position.top-40
 	},1100,'easeInOutCirc');
 });
 $('.js-contacts').click(function(){
 	var position = $('.contacts').offset();
 	$('body, html').animate({
-		scrollTop: position.top
+		scrollTop: position.top-40
 	},1100,'easeInOutCirc');
 });
 $('.js-open-work-form').hover(function(event) {
