@@ -28,13 +28,13 @@
 	<!-- BEGIN nav  -->
 	<div class="nav"><div class="nav__in">
 		<ul class="nav__list">
-			<li><a href="#">Услуги и цены</a></li>
-			<li><a href="#">Гарантии</a></li>
-			<li><a href="#">Как мы работаем</a></li>
-			<li><a href="#">Документация</a></li>
-			<li><a href="#">Отзывы</a></li>
-			<li><a href="#">Наши юристы</a></li>
-			<li><a href="#">Контакты</a></li>
+			<li><a href="#" class="js-price">Услуги и цены</a></li>
+			<li><a href="#" class="js-guaranties">Гарантии</a></li>
+			<li><a href="#" class="js-work">Как мы работаем</a></li>
+			<li><a href="#" class="js-documentation">Документация</a></li>
+			<li><a href="#" class="js-feedbacks">Отзывы</a></li>
+			<li><a href="#" class="js-team">Наши юристы</a></li>
+			<li><a href="#" class="js-contacts">Контакты</a></li>
 		</ul>
 	</div></div>
 	<!-- END nav -->
@@ -47,7 +47,6 @@
 			<div class="promo__info-form form_size_small">
 				<p class="time_to">до конца акции осталось:</p>
 				<div class="form__timer">
-					<!-- <img src="img/timer.png" alt=""> -->
 				</div>
 				<form action="" class="form">
 					<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
@@ -90,7 +89,13 @@
 							<p class="price_item__num"><strong>24 000</strong> руб</p>
 							<p class="brown">2 посещения - 2 месяца</p>
 						</div>
-						<input type="button" value="заказать" class="button">
+						<form action="" class="form copy-form">
+							<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
+								<input type="text" placeholder="Введите имя">
+								<input type="text" placeholder="Введите телефон">
+							</div></div>
+							</form>
+						<input type="button" value="заказать" class="button js-open-price-form">
 					</div>
 				</div></div>
 				</div>
@@ -114,7 +119,13 @@
 							<p class="price_item__num"><strong>24 000</strong> руб</p>
 							<p class="brown">Без Вашего участия - 2 месяца</p>
 						</div>
-						<input type="button" value="заказать" class="button">
+						<form action="" class="form copy-form">
+							<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
+								<input type="text" placeholder="Введите имя">
+								<input type="text" placeholder="Введите телефон">
+							</div></div>
+							</form>
+						<input type="button" value="заказать" class="button js-open-price-form">
 					</div>
 				</div></div>
 				</div>
@@ -141,7 +152,13 @@
 							<p class="price_item__num"><strong>24 000</strong> руб</p>
 							<p class="brown">2 посещения - 2 месяца</p>
 						</div>
-						<input type="button" value="заказать" class="button">
+						<form action="" class="form copy-form">
+							<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
+								<input type="text" placeholder="Введите имя">
+								<input type="text" placeholder="Введите телефон">
+							</div></div>
+							</form>
+						<input type="button" value="заказать" class="button js-open-price-form">
 					</div>
 				</div></div>
 				</div>
@@ -165,7 +182,13 @@
 							<p class="price_item__num"><strong>41 000</strong> руб</p>
 							<p class="brown">1 посещение - 1 день</p>
 						</div>
-						<input type="button" value="заказать" class="button">
+						<form action="" class="form copy-form">
+							<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
+								<input type="text" placeholder="Введите имя">
+								<input type="text" placeholder="Введите телефон">
+							</div></div>
+							</form>
+						<input type="button" value="заказать" class="button js-open-price-form">
 					</div>
 				</div></div>
 				</div>
@@ -228,7 +251,7 @@
 		</article>
 
 		<article class="guarantees__item">
-			<div class="guarantees__item_pic"><i class="guar_5"></i></div>
+			<div class="guarantees__item_pic"><i class="guar_6"></i></div>
 			<h2 class="guarantees__item_header">100% СОБЛЮДЕНИЕ ЗАКОНОДАТЕЛЬСТВА</h2>
 			<p class="guarantees__item_descr">Мы используем только законные методы ликвидации</p>
 		</article>
@@ -270,7 +293,13 @@
 				</article>
 				</div>
 			</div>
-			<input type="button" class="button" value="отправить заявку на консультацию">
+			<form action="" class="form work-form copy-form">
+				<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
+					<input type="text" placeholder="Введите имя">
+					<input type="text" placeholder="Введите телефон">
+				</div></div>
+			</form>
+			<input type="button" class="button js-open-work-form" value="отправить заявку на консультацию">
 		</div></div>
 		<!-- END work -->
 
@@ -513,6 +542,7 @@
 	  <div class="footer__form">
 	  	<p class="footer__form_header">Заказать обратный звонок</p>
 	  	<input type="text" placeholder="Введите телефон" class="footer__form_input">
+	  	<input type="button" value="ЗАКАЗАТЬ" class="button">
 	  </div>
 	</div>
 	<!-- END footer -->

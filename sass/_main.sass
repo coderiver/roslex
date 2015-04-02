@@ -78,7 +78,7 @@
 		.promo__we-man
 			+png(promo__man)
 			position: relative
-			top: 10px
+			top: 26px
 			display: inline-block
 		.promo__we-embl
 			+png(promo__emb)
@@ -86,7 +86,7 @@
 			vertical-align: top
 			position: relative
 			top: 48px 
-			right: 43px 
+			right: 32px 
 			
 //-----rates
 
@@ -105,7 +105,7 @@
 		padding: 40px 0
 		&:before, &:after
 			content: ''
-			width: 292px
+			width: 288px
 			height: 2px
 			background-color: #282620 
 			display: inline-block 
@@ -116,6 +116,7 @@
 			left: 0
 		&:after
 			right: 0
+			width: 289px 
 	.rates__body
 		font-size: 0
 		margin: 0 -8px 
@@ -188,6 +189,12 @@
 				color: $brown 
 				+pt-b
 				font-size: 22px 
+			.form
+				position: absolute
+				left: -50% 
+				top: -70px 
+				z-index: 1
+				display: none 
 
 
 //-----action
@@ -302,6 +309,8 @@
 					+png(guar_4)
 				&.guar_5
 					+png(guar_5)
+				&.guar_6
+					+png(guar_6)
 
 //-----about
 .about
@@ -318,6 +327,7 @@
 	.work__in
 		@extend %in
 		text-align: center
+		position: relative
 	.work__header
 		padding-top: 11px 
 	.work__form
@@ -355,6 +365,12 @@
 		font-size: 15px
 		letter-spacing: 1px  
 		cursor: pointer
+	.form
+		display: none
+		position: absolute
+		top: 185px 
+		left: 50%
+		+translate(-50%,0)
 		
 .documentation
 	&:after
@@ -432,6 +448,7 @@
 	overflow: hidden  
 	.feedbacks__header
 		padding-top: 35px 
+		padding-bottom: 20px 
 		+pt-b
 		font-size: 31px 
 		text-align: center 
@@ -509,6 +526,8 @@
 			z-index: 2 
 			color: #6E582C 
 			background-color: #FFF 
+			padding: 0 10px 
+			
 	.team__list
 		font-size: 0
 		margin: 0 -20px 
@@ -603,11 +622,12 @@
 			font-size: 18px 
 			text-indent: 10px  
 			padding: 5px  0
-			width: 387px
+			width: 317px
 			+pt
 			+box-shadow(1px 1px 1px 0 #8c8c8c inset)
-			
-		
-		 
-			
-
+		.button
+			height: 35px
+			position: relative
+			top: -1px 
+			margin-left: 3px  
+			cursor: pointer
