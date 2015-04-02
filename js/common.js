@@ -85,5 +85,18 @@ $(document).click(function(event) {
     $(".copy-form").fadeOut('fast');
     event.stopPropagation();
 });
-
+// $(document).scroll(function(){
+// 	var scroll = $(window).scrollTop();
+// 	$('.nav').addClass('is-fixed');
+// });
+$(window).scroll(function() {    
+     var scroll = $(window).scrollTop();
+     if ($('.js-wrap').length>0) {
+      if (scroll >= $('.js-wrap').offset().top) {
+          $(".js-fixed").addClass("is-fixed");
+      } else {
+          $(".js-fixed").removeClass("is-fixed");
+      };
+     };
+ });
 });

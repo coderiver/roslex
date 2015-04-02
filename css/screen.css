@@ -63,6 +63,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .form .form__inputs_dbrown input { margin-bottom: 15px; }
 .form .button { margin-top: 10px; letter-spacing: 1px; }
 
+.is-fixed { position: fixed; z-index: 5; }
+
+.js-fixed { width: 100%; top: 0; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
