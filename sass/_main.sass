@@ -7,8 +7,10 @@
 	position: relative
 	+background-size(cover)
 	background-position: top center 
+	min-width: 960px
 	.promo__in
 		@extend %in
+		position: relative
 	.promo__header
 		padding-top: 30px
 		color: #FFF
@@ -29,6 +31,7 @@
 			font-size: 20px 
 			+pt-b
 			color: #fff 
+			@extend %caps
 			.promo__info-text_action
 				background-color: #fe031b	
 				padding: 0 3px
@@ -73,7 +76,7 @@
 			font-size: 13px
 	.promo__we
 		position: absolute
-		right: 170px
+		right: 0px
 		top: 0
 		.promo__we-man
 			+png(promo__man)
@@ -122,7 +125,7 @@
 		margin: 0 -8px 
 	.price
 		display: inline-block
-		padding: 0 7px 
+		padding: 0 7px  
 	.price_item
 		width: 230px
 		height: 510px 
@@ -195,14 +198,17 @@
 				top: -70px 
 				z-index: 1
 				display: none 
-
+.ie, .ff
+	.price
+		.price_item__foo
+			bottom: 14px
 
 //-----action
 .action
 	background-image: url(../img/action_bg.png) 
 	background-repeat: no-repeat
 	background-position: top center 
-	padding-bottom: 120px 
+	padding-bottom: 8px 
 	.action__in
 		@extend %in
 		padding-top: 10px 
@@ -216,8 +222,11 @@
 		+pt-b
 		font-size: 30px 
 		text-align: center
+		@extend %caps
 		.red
-			color: #FD3F49 
+			background-color: #fe031b 
+			padding: 0 4px 
+			color: #FFF 
 		.brown
 			color: $brown 
 	.action__form
@@ -266,6 +275,7 @@
 	background-color: #f9f9f9
 	border-top: 1px solid #825b23
 	border-bottom: 1px solid #825b23
+	margin-top: 120px 
 	padding-bottom: 25px 
 	.guarantees__in
 		@extend %in
@@ -316,7 +326,7 @@
 .about
 	background-image: url('../img/about_bg.png')
 	background-color: #FEFDFD 
-	background-position-x: 45% 
+	background-position: 43% 0 
 	background-repeat: no-repeat  
 	.about__header
 		font-size: 44px
@@ -382,7 +392,7 @@
 		+box-shadow(0 0 3px 0px #4f3f20 inset)
 	.documentation__in
 		text-align: center
-		padding-top: 58px 
+		padding-top: 10px 
 	.documentation__header
 		padding-bottom: 33px 
 		letter-spacing: -3px 
@@ -452,9 +462,10 @@
 		+pt-b
 		font-size: 31px 
 		text-align: center 
-		+background-image(radial-gradient(45px 50px, #816327 10px, #524221 30px))
-		+background-clip(text)
-		color: transparent
+		color: #524221
+		// +background-image(radial-gradient(45px 50px, #816327 10px, #524221 30px))
+		// +background-clip(text)
+		// color: transparent
 	.slider
 		max-width: 100% 
 	.slider__top
@@ -500,34 +511,9 @@
 .team
 	.team__header
 		margin-top: 40px 
-		text-align: center
-		position: relative
-		z-index: 1 
-		position: relative
 		margin-bottom: 36px 
-		&:after
-			content: ''
-			display: block
-			position: absolute
-			width: 100%
-			top: 7px
-			border-bottom: 8px solid  #6e582c
-		&:before
-			content: ''
-			display: block
-			position: absolute
-			width: 100%
-			bottom: 5px
-			border-top: 8px solid  #6e582c
-		span
-			+pt-b
-			font-size: 41px
-			position: relative
-			z-index: 2 
-			color: #6E582C 
-			background-color: #FFF 
-			padding: 0 10px 
-			
+		&:after, &:before
+			width: 38% 
 	.team__list
 		font-size: 0
 		margin: 0 -20px 
@@ -563,7 +549,7 @@
 		position: relative
 		height: 116px 
 		background-image: url('../img/contacts_bg.png') 
-		background-position-x: 50%
+		background-position: top center
 		background-color: transparent 
 		span
 			+pt-b
@@ -631,3 +617,19 @@
 			top: -1px 
 			margin-left: 3px  
 			cursor: pointer
+//-----getting
+.getting
+	.getting__in
+		@extend %in
+	.getting__list
+		text-align: center
+		a
+			display: inline-block
+			vertical-align: middle
+			padding: 23px
+			width: 195px 
+			+clr
+			img
+				max-width: 100% 
+.transition
+	+gpu

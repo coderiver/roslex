@@ -29,10 +29,45 @@ $ico: logo mail phone loc
 		.icon-#{$i}
 			+s(#{$i})
 			display: inline-block
+.header-linear
+	position: relative
+	z-index: 1
+	text-align: center
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 5px
+		right: 0
+		width: 36%
+		height: 30px
+		border-top: 8px solid  #6e582c
+		border-bottom: 8px solid  #6e582c
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: 5px
+		left: 0
+		width: 36%
+		height: 30px
+		border-top: 8px solid  #6e582c
+		border-bottom: 8px solid  #6e582c
+	span
+		+pt-b
+		font-size: 41px
+		position: relative
+		z-index: 2 
+		color: #6E582C 
+		// background-color: #FFF 
+		padding: 0 10px
 .out
 	width: 100% 
 	+sprite-loop
+	min-width: 960px 
 //blocks
+.ie
+	overflow-x: hidden
 .button 
 	@extend %caps
 	height: 40px 
@@ -111,6 +146,14 @@ $ico: logo mail phone loc
 					text-decoration: underline
 			&:last-child a:after
 				display: none
+// .ie
+// 	.nav__list
+// 		li
+// 			position: relative
+// 		a
+// 			&:after
+// 				top: 5px 
+
 
 .form
 	text-align: center
@@ -145,3 +188,4 @@ $ico: logo mail phone loc
 .js-fixed
 	width: 100%
 	top: 0 
+

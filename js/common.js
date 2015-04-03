@@ -73,12 +73,21 @@ $('.js-contacts').click(function(){
 });
 $('.js-open-work-form').hover(function(event) {
 	$('.work-form').fadeIn();
-});
+},
+	function() {
+	$('.work-form').hide();
+
+	}
+);
 var $priceForm = $('.copy-box .copy-form');
 $('.js-open-price-form').hover(function(){
 	$(this).siblings('.form').fadeIn();
 	$('.price_item__foo').not($(this).parent()).find('.form').fadeOut('fast')
-});
+},
+	function() {
+	$('.work-form').hide();
+
+	});
 
 $(document).click(function(event) {
     if ($(event.target).closest(".copy-form").length) return;
@@ -99,4 +108,5 @@ $(window).scroll(function() {
       };
      };
  });
+
 });
