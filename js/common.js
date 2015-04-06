@@ -98,6 +98,7 @@ $(document).click(function(event) {
 // 	var scroll = $(window).scrollTop();
 // 	$('.nav').addClass('is-fixed');
 // });
+// $('.js-up').hidden();
 $(window).scroll(function() {    
      var scroll = $(window).scrollTop();
      if ($('.js-wrap').length>0) {
@@ -107,6 +108,17 @@ $(window).scroll(function() {
           $(".js-fixed").removeClass("is-fixed");
       };
      };
- });
 
+     if (scroll >= $('.promo').offset().top+100) {
+			$('.js-up').fadeIn('fast');
+      } else {
+      	$('.js-up').fadeOut('fast');
+      }
+
+ });
+$('.js-up').click(function(){
+	$('body, html').animate({
+		scrollTop: 0
+		},1100,'easeInOutCirc');
+})
 });
