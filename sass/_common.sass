@@ -19,7 +19,7 @@ body
 //variables
 $brown: #825b23
 $orange: #ff7301
-$blue: #12385c
+$blue: #516b85
 %in
 	width: 960px
 	margin: 0 auto
@@ -35,34 +35,41 @@ $ico: logo logo-blue mail phone loc loc-org
 	position: relative
 	z-index: 1
 	text-align: center
+	&:after, &:before
+		content: ''
+		display: block
+		position: absolute
+		top: 5px
+		width: 36%
+		height: 30px
+
 	&:after
-		content: ''
-		display: block
-		position: absolute
-		top: 5px
 		right: 0
-		width: 36%
-		height: 30px
-		border-top: 8px solid  #6e582c
-		border-bottom: 8px solid  #6e582c
 	&:before
-		content: ''
-		display: block
-		position: absolute
-		top: 5px
 		left: 0
-		width: 36%
-		height: 30px
-		border-top: 8px solid  #6e582c
-		border-bottom: 8px solid  #6e582c
+
 	span
 		+pt-b
 		font-size: 41px
 		position: relative
 		z-index: 2 
-		color: #6E582C 
-		// background-color: #FFF 
 		padding: 0 10px
+		+r(1227)
+			background-color: #FFF 
+.header-linear--brown
+	&:after, &:before
+		border-top: 8px solid  #6e582c
+		border-bottom: 8px solid  #6e582c
+	span
+		color: #6E582C 
+.header-linear--blue
+	&:after, &:before
+		border-top: 8px solid  $blue
+		border-bottom: 8px solid  $blue
+	span
+		color: $blue 
+
+
 .out
 	width: 100% 
 	+sprite-loop
@@ -189,7 +196,13 @@ $ico: logo logo-blue mail phone loc loc-org
 		+png(form__inputs)
 	.form__inputs_orange
 		+png(form__inputs-org)
-	.form__inputs_dbrown
+	.form__inputs--dorange
+		+png(action_tooltip-org)
+		.form__inputs_in
+			padding-top: 26px
+		input
+			margin-bottom: 15px 
+	.form__inputs--dbrown
 		+png(action_tooltip)
 		.form__inputs_in
 			padding-top: 26px

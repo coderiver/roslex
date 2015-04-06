@@ -100,10 +100,6 @@
 	height: 687px
 	.rates__header
 		padding-top: 27px 
-.rates--reg
-	height: 660px 
-	.rates__header
-		padding: 40px 0
 
 .rates
 	.rates__in
@@ -168,7 +164,7 @@
 		.price_item__foo
 			position: absolute
 			// bottom: 0px
-			width: 93% 
+			// width: 93% 
 			.price_item__foo_text
 				width: 100%
 				height: 86px 
@@ -200,21 +196,35 @@
 				// top: -10px 
 				cursor: pointer
 				+pt-b
-				font-size: 22px 
+				// font-size: 22px 
 			.form
 				position: absolute
 				// left: -50% 
-				top: -70px 
 				z-index: 1
 				display: none 
 .ie, .ff
 	.price
 		.price_item__foo
-			bottom: 14px
+			bottom: 24px
 
 //-----action
-.action
+.action--brown
 	background-image: url(../img/action_bg.png) 
+	.action__header
+		padding: 10px 0
+	.button
+		margin-top: 15px 
+	
+.action--blue
+	background-image: url(../img/action_bg-blue.png) 
+	.action__header
+		padding: 6px 0
+	.button
+		font-size: 20px 
+		margin-top: 19px
+
+
+.action
 	background-repeat: no-repeat
 	background-position: top center 
 	padding-bottom: 8px 
@@ -224,7 +234,6 @@
 		text-align: center
 	.action__header
 		width: 730px
-		padding: 10px 0
 		background-color: #f3f0e9
 		margin: 0 auto 
 		+border-radius(10px)
@@ -238,6 +247,8 @@
 			color: #FFF 
 		.brown
 			color: $brown 
+		.blue
+			color: $blue 
 	.action__form
 		.form__inputs
 			margin: 0 auto 
@@ -246,12 +257,22 @@
 			font-size: 21px
 			color: #3d3837
 			margin: 5px  0
+		.form__timer--blue
+			figcaption
+				+pt-i
+				font-size: 9px 
+				color: $blue 
+		.form__timer--browm
+			figcaption
+				+pt-i
+				font-size: 9px 
+				color: $brown 
 		.form__timer_size_big
 			height: 90px 
 			figcaption
 				+pt-i
 				font-size: 9px 
-				color: $brown 
+				// color: $brown 
 			figure
 				width: 101px !important
 				max-width: 101px !important 
@@ -275,22 +296,30 @@
 			margin: 0 auto 
 		.button
 			width: 330px 
-			margin-top: 15px 
+			// margin-top: 15px 
 			margin-left: -6px 
 
 
 //-----guarantees
-.guarantees
+.guarantees--brown
 	background-color: #f9f9f9
 	border-top: 1px solid #825b23
 	border-bottom: 1px solid #825b23
+	.guarantees__header
+		+png(guarantees_h)
+.guarantees--blue
+	border-top: 1px solid #d9d9d9
+	border-bottom: 1px solid #d9d9d9
+	+g(#f5e5d1, #f5af77)
+	.guarantees__header
+		+png(guarantees_h-blue)
+.guarantees
 	margin-top: 120px 
 	padding-bottom: 25px 
 	.guarantees__in
 		@extend %in
 		position: relative
 	.guarantees__header
-		+png(guarantees_h)
 		position: absolute
 		top: -78px 
 		text-align: center
@@ -310,11 +339,14 @@
 		.guarantees__item_header
 			+pt-b
 			font-size: 21px 
-			color: #3D3837 
 		.guarantees__item_descr
 			+pt-i
 			font-size: 15px 
 			line-height: 1em 
+	.guarantees__item--brown
+		.guarantees__item_header
+			color: #3D3837 
+
 		.guarantees__item_pic
 			i
 				display: inline-block
@@ -330,17 +362,44 @@
 					+png(guar_5)
 				&.guar_6
 					+png(guar_6)
+	.guarantees__item--blue
+		.guarantees__item_header
+			color: #072c51 
+		.guarantees__item_descr
+			color: #072c51 
+		.guarantees__item_pic
+			i
+				display: inline-block
+				&.guar_1
+					+png(guar_1-blue)
+				&.guar_2
+					+png(guar_2-blue)
+				&.guar_3
+					+png(guar_3-blue)
+				&.guar_4
+					+png(guar_4-blue)
+				&.guar_5
+					+png(guar_5-blue)
+				&.guar_6
+					+png(guar_6-blue)
 
 //-----about
-.about
+.about--brown
 	background-image: url('../img/about_bg.png')
+.about--blue	
+	background-image: url('../img/about_bg-blue.png')
+
+.about
 	background-color: #FEFDFD 
 	background-position: 43% 0 
 	background-repeat: no-repeat  
 	.about__header
 		font-size: 44px
 		+pt-b
-		color: $brown   
+	.about__header--brown
+		color: $brown 
+	.about__header--blue
+		color: #496482
 
 .work
 	.work__in
@@ -349,8 +408,11 @@
 		position: relative
 	.work__header
 		padding-top: 11px 
-	.work__form
+	.work__form--brown
 		+png(work_form)
+	.work__form--org
+		+png(work_form-org)
+	.work__form
 		margin: -28px auto 0
 		font-size: 0
 		
@@ -409,8 +471,12 @@
 		+pt-b
 		color: #FFF
 		font-size: 18px 
+	.documentation__item_header--brown
 		background-color: rgba(#6e582c, .5)
 		+box-shadow(0 0 3px 0px rgba(#4f3f20, .5) inset)
+	.documentation__item_header--blue
+		background-color: rgba($blue, .7)
+		
 	.documentation__item_wrap
 		@extend %in
 		.documentation__item_imgs
@@ -465,8 +531,11 @@
 	 
 
 //-----feedbacks
-.feedbacks
+.feedbacks--brown
 	background-color: #C5BCAB 
+.feedbacks--blue
+	background-color: #9CABB9 
+.feedbacks
 	padding-bottom: 60px
 	overflow: hidden  
 	.feedbacks__header
@@ -475,10 +544,15 @@
 		+pt-b
 		font-size: 31px 
 		text-align: center 
-		color: #524221
 		// +background-image(radial-gradient(45px 50px, #816327 10px, #524221 30px))
 		// +background-clip(text)
 		// color: transparent
+	.feedbacks__header--brown
+		color: #524221
+	.feedbacks__header--blue
+		color: #fff 
+	
+		
 	.slider
 		max-width: 100% 
 	.slider__top
@@ -491,7 +565,6 @@
 		margin: 0 10px 
 		cursor: pointer
 		&:hover
-			+box-shadow(0 0 0 2px #634813)
 			+border-radius(3px)
 		.feedback__author_photo
 			display: table-cell
@@ -518,6 +591,14 @@
 				font-size: 12px 
 				line-height: 1.1em
 				padding-top: 6px  
+	.feedback--brown
+		.feedback
+			&:hover
+				+box-shadow(0 0 0 2px #634813)
+	.feedback--blue
+		.feedback
+			&:hover
+				+box-shadow(0 0 0 2px #072b4f)
 				
 
 //-----team
@@ -530,15 +611,18 @@
 	.team__list
 		font-size: 0
 		margin: 0 -20px 
+		text-align: center
 		li
 			display: inline-block
-			padding: 0 25px 
+			padding: 0 26px 
+			margin-bottom: 10px 
 	.team__list_wrap
-		width: 1162px 
-		margin: 0 auto
+		@extend %in
 .member
 	.member__about--brown 
 		color: $brown 
+	.member__about--blue
+		color: #072c51 
 	.member__surname
 		// color: #3d3837 
 		+pt-b
@@ -560,11 +644,19 @@
 			
 //-----contacts
 .contacts
+	.contacts__header--brown
+		background-image: url('../img/contacts_bg.png')
+		span
+			color: #6E582C 
+	.contacts__header--blue
+		background-image: url('../img/contacts_bg-blue.png')
+		span
+			color: $blue 
+
 	.contacts__header
 		text-align: center
 		position: relative
 		height: 116px 
-		background-image: url('../img/contacts_bg.png') 
 		background-position: top center
 		background-color: transparent 
 		span
@@ -573,7 +665,6 @@
 			position: relative
 			top: 46px 
 			z-index: 2 
-			color: #6E582C 
 			background-color: #FFF 
 			text-align: center
 	.contacts__map
@@ -584,10 +675,13 @@
 		z-index: -1
 
 //-----footer
-.footer 
+.footer--brown
 	background-color: #6e582c
 	+filter-gradient(#6e582c, #6e582c, horizontal)
 	+background-image(linear-gradient(left,  #6e582c 45%,#866728 59%,#6e582c 73%))
+.footer--blue
+	background-color: #072C51 
+.footer 
 	padding-bottom: 20px 
 	.footer__in
 		@extend %in
@@ -656,5 +750,8 @@
 	right: 15px
 	cursor: pointer
 	z-index: 5  
-	+png(up)
 	+gpu
+.up--lic
+	+png(up)
+.up--reg
+	+png(up_reg)

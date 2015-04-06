@@ -24,6 +24,9 @@
 
 .rates--reg
 	background-image: url(../img/rates_bg-reg.png)
+	height: 660px 
+	.rates__header
+		padding: 27px 0
 .rates__header--brown
 	color: #282620
 	&:before, &:after
@@ -65,24 +68,37 @@
 			letter-spacing: 1px  
 	.price_item__info
 		width: 87%
-		margin: 0 auto 
+		position: absolute
+		top: 37%
+		left: 50%
+		+translate(-50%,-46%)  
 		li
 			font-size: 25px 
 			letter-spacing: 1px 
 			line-height: 1em
 			padding: 8px 0
 	.price_item__foo
-		bottom: 35px 
+		bottom: 14px 
+		width: 87%
+		left: 50%
+		margin-left: -43.5% 
 	.price_item__foo_text
 		font-size: 18px 
+		padding-bottom: 18px 
 		.price_item__num
 			font-size: 28px 
 	.button
-		width: 88%
+		width: 93%
 		font-size: 26px
-		top: 12px
+		top: -8px
 	.form
-		left: -29%    		
+		// +translate(-50%,0)
+		// margin-left: 50%
+		left: 50%
+		+translate(-50%,0)
+		top: -50px 
+		
+
 .price--small
 	padding: 0 7px 
 	.price_item
@@ -99,6 +115,7 @@
 				padding: 5px 0
 		.price_item__foo	
 			bottom: 0px
+			width: 93% 
 		.price_item__foo_text
 			// font-size: 18px 
 			font-size: 14px 
@@ -109,6 +126,7 @@
 		top: -10px 
 	.form
 		left: -50% 
+		top: -70px 
 	 
 
 
@@ -127,6 +145,9 @@
 	li
 		color: $blue
 		border-bottom: 1px solid #000  
+
+.form__inputs--dorange
+	
 		
 
 
