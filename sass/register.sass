@@ -1,0 +1,132 @@
+.topline__mail--orange, .topline__phone--orange
+	color: $orange
+	
+
+.nav--orange
+	background-color: #FCBC69 
+.nav__list--blue
+	a
+		color: $blue
+		
+
+.promo__we--woman
+	+png(promo__woman)
+	top: 35px 
+.promo__we-embl--blue
+	+png(promo__emb-blue)
+
+
+.promo--blue
+	background-image: url('../img/promo_bg-blue.png')
+.promo--brown
+	background-image: url('../img/promo_bg.png')
+	
+
+.rates--reg
+	background-image: url(../img/rates_bg-reg.png)
+.rates__header--brown
+	color: #282620
+	&:before, &:after
+		width: 288px
+		height: 2px
+		background-color: #282620 
+		position: absolute
+		top: 42px
+		// +translate(0, -50%) 
+	&:before
+		left: 0
+	&:after
+		right: 0
+		width: 289px 
+	
+.rates__header--white
+	color: #fff
+	letter-spacing: 1px 
+	&:before, &:after
+		position: absolute
+		+png(rates_h)
+		width: 254px 
+		top: 50%
+		+translate(0,-50%) 
+	&:before
+		left: 0
+	&:after
+		right: 0
+		
+.price--big
+	padding: 0 15px 
+	.price_item
+		width: 286px
+		height: 550px 
+		.price__item_in
+			width: 95% 
+		h3
+			font-size: 27px 
+			letter-spacing: 1px  
+	.price_item__info
+		width: 87%
+		margin: 0 auto 
+		li
+			font-size: 25px 
+			letter-spacing: 1px 
+			line-height: 1em
+			padding: 8px 0
+	.price_item__foo
+		bottom: 35px 
+	.price_item__foo_text
+		font-size: 18px 
+		.price_item__num
+			font-size: 28px 
+	.button
+		width: 88%
+		font-size: 26px
+		top: 12px
+	.form
+		left: -29%    		
+.price--small
+	padding: 0 7px 
+	.price_item
+		width: 230px 
+		height: 510px 
+		.price_item__in
+			width: 93% 
+		.price_item__header
+			h3
+				font-size: 16px 
+		.price_item__info
+			li
+				font-size: 14px 
+				padding: 5px 0
+		.price_item__foo	
+			bottom: 0px
+		.price_item__foo_text
+			// font-size: 18px 
+			font-size: 14px 
+		.price_item__num
+			font-size: 22px 
+	.button
+		width: 200px 
+		top: -10px 
+	.form
+		left: -50% 
+	 
+
+
+.price_item__header--blue
+	h3
+		color: $blue
+.price_item__header--brown
+	h3
+		color: $brown 
+.price_item__info--brown
+	li
+		border-bottom: 1px solid #282620 
+		color: #282620 
+
+.price_item__info--blue
+	li
+		color: $blue
+		border-bottom: 1px solid #000  
+		
+
+

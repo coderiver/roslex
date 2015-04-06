@@ -18,12 +18,14 @@ body
 	line-height: 1.4
 //variables
 $brown: #825b23
+$orange: #ff7301
+$blue: #12385c
 %in
 	width: 960px
 	margin: 0 auto
 %caps
 	text-transform: uppercase 
-$ico: logo mail phone loc
+$ico: logo logo-blue mail phone loc loc-org
 =sprite-loop
 	@each $i in $ico
 		.icon-#{$i}
@@ -71,14 +73,22 @@ $ico: logo mail phone loc
 .button 
 	@extend %caps
 	height: 40px 
-	border: 1px solid #655638
-	+border-radius(7px)
-	+box-shadow(1px 2px 3px 0 #45403c, 1px 1px 3px #fff inset, -1px -1px 3px 0 #8f7b40 inset )
-	+gh(#e4d28f, #debb61)
 	padding: 0 6px 
-	color: #3d3837
 	+pt-b
 	font-size: 15px 
+	+border-radius(7px)
+	color: #3d3837
+.button--brown
+	border: 1px solid #655638
+	+box-shadow(1px 2px 3px 0 #45403c, 1px 1px 3px #fff inset, -1px -1px 3px 0 #8f7b40 inset )
+	+gh(#e4d28f, #debb61)
+.button--orange
+	+gh(rgb(251,160,42), rgb(255,124,18))
+	+box-shadow(1px 1px 3px 0px #000)
+
+
+		
+
 
 
 
@@ -98,11 +108,12 @@ $ico: logo mail phone loc
 			
 	.topline__mail, .topline__phone
 		display: inline-block
-		color: $brown
 		+pt-b
 		font-size: 15px  
 		i
 			vertical-align: middle
+	.topline__mail--brown, .topline__phone--brown
+		color: $brown
 			
 	.topline__mail
 		margin-right: 25px
@@ -113,12 +124,12 @@ $ico: logo mail phone loc
 
 
 //-----nav
-.nav
+.nav--brown
 	background-color: #6e582c
 	+filter-gradient(#6e582c, #6e582c, horizontal)
 	+background-image(linear-gradient(left,  #6e582c 45%,#866728 59%,#6e582c 73%))
 	+box-shadow(0 -1px 1px #5b4925)
-	
+.nav
 	.nav__in
 		@extend %in
 	.nav__list
@@ -128,7 +139,6 @@ $ico: logo mail phone loc
 			display: inline-block
 			font-size: 0
 			a
-				color: #fff
 				vertical-align: middle
 				position: relative
 				+pt
@@ -146,6 +156,10 @@ $ico: logo mail phone loc
 					text-decoration: underline
 			&:last-child a:after
 				display: none
+.nav__list--white
+	a
+		color: #FFF 
+
 // .ie
 // 	.nav__list
 // 		li
@@ -173,6 +187,8 @@ $ico: logo mail phone loc
 			margin-bottom: 10px 
 	.form__inputs_regular
 		+png(form__inputs)
+	.form__inputs_orange
+		+png(form__inputs-org)
 	.form__inputs_dbrown
 		+png(action_tooltip)
 		.form__inputs_in
