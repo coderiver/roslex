@@ -2,7 +2,6 @@
 //-----promo
 
 .promo
-	background-image: url('../img/promo_bg.png')
 	height: 540px 
 	position: relative
 	+background-size(cover)
@@ -78,57 +77,62 @@
 		position: absolute
 		right: 0px
 		top: 0
-		.promo__we-man
-			+png(promo__man)
+		.promo__we-photo
 			position: relative
-			top: 26px
 			display: inline-block
+		.promo__we--man
+			+png(promo__man)
+			top: 26px
+			
 		.promo__we-embl
-			+png(promo__emb)
 			display: inline-block
 			vertical-align: top
 			position: relative
 			top: 48px 
 			right: 32px 
+		.promo__we-embl--brown
+			+png(promo__emb)
+
 			
 //-----rates
+.rates--lic
+	background-image: url(../img/rates_bg.png)
+	height: 687px
+	.rates__header
+		padding-top: 27px 
+.rates--reg
+	height: 660px 
+	.rates__header
+		padding: 40px 0
 
 .rates
-	background-image: url(../img/rates_bg.png)
-	height: 660px 
 	.rates__in
 		@extend %in
 	.rates__header
-		color: #282620
 		text-align: center
 		position: relative
 		+pt-b
 		font-size: 21px
 		@extend %caps 
-		padding: 40px 0
 		&:before, &:after
 			content: ''
-			width: 288px
-			height: 2px
-			background-color: #282620 
 			display: inline-block 
-			position: absolute
-			top: 50%
-			+translate(0, -50%) 
-		&:before
-			left: 0
-		&:after
-			right: 0
-			width: 289px 
+	.rates__about
+		text-align: center
+		color: #FFF
+		+ptn
+		font-size: 17px 
+		padding: 12px 10px 14px  
 	.rates__body
 		font-size: 0
-		margin: 0 -8px 
+		margin: 0 -8px
+		text-align: center 
 	.price
 		display: inline-block
-		padding: 0 7px  
+		// padding: 0 7px  
 	.price_item
-		width: 230px
-		height: 510px 
+		// width: 230px
+		// height: 510px 
 		vertical-align: top 
 		text-align: center
 		+border-radius(10px)
@@ -139,6 +143,7 @@
 			position: relative
 			height: 100%
 			display: table
+			// width: 93% 
 		.price_item__header
 			width: 100%
 			height: 65px 
@@ -147,9 +152,8 @@
 			text-align: center
 			display: table
 			h3
-				font-size: 16px
+				// font-size: 16px
 				+pt-b
-				color: $brown 
 				display: table-cell
 				vertical-align: middle
 				text-align: center
@@ -157,15 +161,13 @@
 			margin-top: 15px
 			li
 				+ptn
-				font-size: 14px 
-				color: #282620 
-				padding: 5px 0
-				border-bottom: 1px solid #282620 
+				// font-size: 14px 
+				// padding: 5px 0
 				&:last-child
 					border-bottom: 0 
 		.price_item__foo
 			position: absolute
-			bottom: 0px
+			// bottom: 0px
 			width: 93% 
 			.price_item__foo_text
 				width: 100%
@@ -176,25 +178,32 @@
 				.brown
 					color: #906D3B
 					+pt
-					font-size: 14px 
+					// font-size: 14px 
+					span
+						color: #282620 
+				.blue
+					color: $blue 
+					+pt
+					// font-size: 14px 
 					span
 						color: #282620 
 				.cross
 					text-decoration: line-through
+				.cross--blue
+					color: $blue 
 				.price_item__num
 					+pt
-					font-size: 22px  
+					// font-size: 22px  
 			.button
-				width: 200px 
+				// width: 200px 
 				position: relative
-				top: -10px 
+				// top: -10px 
 				cursor: pointer
-				color: $brown 
 				+pt-b
 				font-size: 22px 
 			.form
 				position: absolute
-				left: -50% 
+				// left: -50% 
 				top: -70px 
 				z-index: 1
 				display: none 
@@ -410,6 +419,10 @@
 			li
 				display: inline-block
 				padding: 7px 32px 
+				width: 70px 
+				img
+					max-width: 100% 
+					vertical-align: middle
 				
 
 
@@ -521,14 +534,17 @@
 			display: inline-block
 			padding: 0 25px 
 	.team__list_wrap
-		@extend %in
+		width: 1162px 
+		margin: 0 auto
 .member
+	.member__about--brown 
+		color: $brown 
 	.member__surname
-		color: #3d3837 
+		// color: #3d3837 
 		+pt-b
-		font-size: 21px 
+		font-size: 21px
 	.member__name
-		color: #3D3837 
+		// color: #3D3837 
 		+pt-b
 		font-size: 14px
 	.member__experience
@@ -641,3 +657,4 @@
 	cursor: pointer
 	z-index: 5  
 	+png(up)
+	+gpu
