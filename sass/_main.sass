@@ -452,15 +452,21 @@
 		top: 185px 
 		left: 50%
 		+translate(-50%,0)
-		
+.documentation--brown		
+	// +box-shadow(0 0 3px 0px #4f3f20 inset)
+	&:after
+		background-color: #6e582c
+.documentation--blue
+	// +box-shadow(0 0 3px 0px #072c51 inset)
+	&:after
+		background-color: #072c51
+	
 .documentation
 	&:after
 		content: ''
 		display: block
 		height: 5px
 		margin-top: 10px   
-		background-color: #6e582c
-		+box-shadow(0 0 3px 0px #4f3f20 inset)
 	.documentation__in
 		text-align: center
 		padding-top: 10px 
@@ -738,9 +744,13 @@
 			vertical-align: middle
 			padding: 23px
 			width: 195px 
+			height: 116px 
+			overflow: hidden 
 			+clr
 			img
 				max-width: 100% 
+				&[src="img/get_3.jpg"]
+					width: 100px 
 .transition
 	+gpu
 .up

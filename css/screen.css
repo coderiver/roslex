@@ -233,7 +233,11 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .work .button { width: 328px; position: relative; top: -30px; left: 13px; width: 333px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 1px; cursor: pointer; }
 .work .form { display: none; position: absolute; top: 185px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 
-.documentation:after { content: ""; display: block; height: 5px; margin-top: 10px; background-color: #6e582c; -moz-box-shadow: 0 0 3px 0px #4f3f20 inset; -webkit-box-shadow: 0 0 3px 0px #4f3f20 inset; box-shadow: 0 0 3px 0px #4f3f20 inset; }
+.documentation--brown:after { background-color: #6e582c; }
+
+.documentation--blue:after { background-color: #072c51; }
+
+.documentation:after { content: ""; display: block; height: 5px; margin-top: 10px; }
 .documentation .documentation__in { text-align: center; padding-top: 10px; }
 .documentation .documentation__header { padding-bottom: 33px; letter-spacing: -3px; }
 .documentation .documentation__item_header { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: white; font-size: 18px; }
@@ -310,9 +314,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .footer .footer__form .button { height: 35px; position: relative; top: -1px; margin-left: 3px; cursor: pointer; }
 
 .getting .getting__list { text-align: center; }
-.getting .getting__list a { display: inline-block; vertical-align: middle; padding: 23px; width: 195px; *zoom: 1; }
+.getting .getting__list a { display: inline-block; vertical-align: middle; padding: 23px; width: 195px; height: 116px; overflow: hidden; *zoom: 1; }
 .getting .getting__list a:after { content: " "; display: table; clear: both; }
 .getting .getting__list a img { max-width: 100%; }
+.getting .getting__list a img[src="img/get_3.jpg"] { width: 100px; }
 
 .transition { -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 
