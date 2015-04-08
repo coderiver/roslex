@@ -336,6 +336,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .up--reg { background: url("../img/up_reg.png") no-repeat 0 0; width: 45px; height: 43px; }
 
+.bd--red { border: 3px solid #fe031b; display: inline; padding: 0 4px; }
+
 .topline__mail--orange, .topline__phone--orange { color: #ff7301; }
 
 .nav--orange { background-color: #fcbc69; }
@@ -350,7 +352,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .promo--brown { background-image: url("../img/promo_bg.png"); }
 
-.rates--reg { background-image: url(../img/rates_bg-reg.png); height: 660px; }
+.rates--reg { background-image: url(../img/rates_bg-reg.png); height: 750px; }
 .rates--reg .rates__header { padding: 27px 0; }
 
 .rates__header--brown { color: #282620; }
