@@ -19,7 +19,7 @@ head.ready(function() {
    arrows: false,
 });
 $('.form__timer').timeTo({
-    timeTo: new Date(new Date('Thu Apr 09 2015 09:00:00 GMT+0300 (Финляндия (лето))')),
+    timeTo: new Date(new Date('Thu Apr 15 2015 09:00:00 GMT+0300 (Финляндия (лето))')),
     displayDays: 2,
     // theme: "w",
     displayCaptions: true,
@@ -67,7 +67,7 @@ $('.js-documentation').click(function(){
 	// $('body, html').animate({
 	// 	scrollTop: position.top+45-40
 	// },1100,'easeInOutCirc');
-	 scrollTo(position, 45);
+	 scrollTo(position, 50);
 
 });
 $('.js-feedbacks').click(function(){
