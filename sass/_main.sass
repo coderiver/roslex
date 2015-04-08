@@ -393,15 +393,21 @@
 	background-color: #FEFDFD 
 	background-position: 43% 0 
 	background-repeat: no-repeat  
-	.about__header
-		font-size: 44px
-		+pt-b
-	.about__header--brown
-		color: $brown 
-	.about__header--blue
-		color: #496482
+.about__header
+	font-size: 44px
+	+pt-b
+.about__header--brown
+	color: $brown 
+.about__header--blue
+	color: #496482
 
+.work--brown
+	background-image: url(../img/work-bg.png) 
+.work--blue
+	background-image: url(../img/work-bg-blue.png) 
 .work
+	background-position: 43% 0 
+	background-repeat: no-repeat 
 	.work__in
 		@extend %in
 		text-align: center
@@ -462,6 +468,7 @@
 		background-color: #072c51
 	
 .documentation
+	padding-top: 40px 
 	&:after
 		content: ''
 		display: block

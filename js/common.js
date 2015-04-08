@@ -31,45 +31,56 @@ $('.nav__list a').click(function(event){
 	event.preventDefault();});
 $('.js-guaranties').click(function(){
 	var position = $('.guarantees').offset();
-	$('body, html').animate({
-		scrollTop: position.top-100-40
-	},1100,'easeInOutCirc');
+	// if($(".js-fixed").hasClass("is-fixed")){
+	// 	$('body, html').animate({
+	// 		scrollTop: position.top-100-40
+	// 	},1100,'easeInOutCirc');
+	// } else {
+	// 	$('body, html').animate({
+	// 		scrollTop: position.top-100-80
+	// 	},1100,'easeInOutCirc');
+	// }
+	scrollTo(position, -100)
 });
+function scrollTo(position, del) {
+	var n = del || 0;
+	if($(".js-fixed").hasClass("is-fixed")){
+		$('body, html').animate({
+			scrollTop: position.top-38+n
+		},1100,'easeInOutCirc');
+	} else {
+		$('body, html').animate({
+			scrollTop: position.top-78+n
+		},1100,'easeInOutCirc');
+	}
+}
 $('.js-price').click(function(){
 	var position = $('.rates').offset();
-	$('body, html').animate({
-		scrollTop: position.top-40
-	},1100,'easeInOutCirc');
+ scrollTo(position);
 });
 $('.js-work').click(function(){
 	var position = $('.work').offset();
-	$('body, html').animate({
-		scrollTop: position.top-40
-	},1100,'easeInOutCirc');
+	 scrollTo(position);
 });
 $('.js-documentation').click(function(){
 	var position = $('.documentation').offset();
-	$('body, html').animate({
-		scrollTop: position.top+45-40
-	},1100,'easeInOutCirc');
+	// $('body, html').animate({
+	// 	scrollTop: position.top+45-40
+	// },1100,'easeInOutCirc');
+	 scrollTo(position, 45);
+
 });
 $('.js-feedbacks').click(function(){
 	var position = $('.feedbacks').offset();
-	$('body, html').animate({
-		scrollTop: position.top-40
-	},1100,'easeInOutCirc');
+	 scrollTo(position);
 });
 $('.js-team').click(function(){
 	var position = $('.team').offset();
-	$('body, html').animate({
-		scrollTop: position.top-40
-	},1100,'easeInOutCirc');
+	 scrollTo(position);
 });
 $('.js-contacts').click(function(){
 	var position = $('.contacts').offset();
-	$('body, html').animate({
-		scrollTop: position.top-40
-	},1100,'easeInOutCirc');
+	 scrollTo(position);
 });
 $('.js-open-work-form').hover(function(event) {
 	$('.work-form').fadeIn();

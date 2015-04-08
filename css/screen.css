@@ -216,10 +216,18 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .about--blue { background-image: url("../img/about_bg-blue.png"); }
 
 .about { background-color: #fefdfd; background-position: 43% 0; background-repeat: no-repeat; }
-.about .about__header { font-size: 44px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; }
-.about .about__header--brown { color: #825b23; }
-.about .about__header--blue { color: #496482; }
 
+.about__header { font-size: 44px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; }
+
+.about__header--brown { color: #825b23; }
+
+.about__header--blue { color: #496482; }
+
+.work--brown { background-image: url(../img/work-bg.png); }
+
+.work--blue { background-image: url(../img/work-bg-blue.png); }
+
+.work { background-position: 43% 0; background-repeat: no-repeat; }
 .work .work__in { text-align: center; position: relative; }
 .work .work__header { padding-top: 11px; }
 .work .work__form--brown { background: url("../img/work_form.png") no-repeat 0 0; width: 929px; height: 320px; }
@@ -237,6 +245,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .documentation--blue:after { background-color: #072c51; }
 
+.documentation { padding-top: 40px; }
 .documentation:after { content: ""; display: block; height: 5px; margin-top: 10px; }
 .documentation .documentation__in { text-align: center; padding-top: 10px; }
 .documentation .documentation__header { padding-bottom: 33px; letter-spacing: -3px; }
