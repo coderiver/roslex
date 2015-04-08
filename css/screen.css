@@ -174,9 +174,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .action .action__form .form__timer--browm figcaption { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 9px; color: #825b23; }
 .action .action__form .form__timer_size_big { height: 90px; margin: 0 auto; }
 .action .action__form .form__timer_size_big figcaption { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 9px; }
-.action .action__form .form__timer_size_big figure { width: 101px !important; max-width: 101px !important; display: inline-block; }
-.action .action__form .form__timer_size_big figure li { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #424242; font-size: 50px; height: 53px; padding-left: 3px; }
-.action .action__form .form__timer_size_big figure > div { overflow: hidden; margin-right: 0 !important; padding-left: 10px; height: 68px !important; background-color: transparent; background-image: url("../img/timer_big_bg.png"); border: 0; }
+.action .action__form .form__timer_size_big figure { width: 101px !important; max-width: 101px !important; display: inline-block; overflow: hidden; }
+.action .action__form .form__timer_size_big figure li { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #424242; font-size: 50px; height: 50px; padding-left: 3px; }
+.action .action__form .form__timer_size_big figure > div { overflow: hidden; margin-right: 0 !important; padding-left: 10px; height: 67px !important; background-color: transparent; background-image: url("../img/timer_big_bg.png"); border: 0; background-position-y: -1px; }
 .action .action__form .form__timer_size_big span { display: none; }
 .action .action__form .button { width: 330px; margin-left: -6px; }
 
