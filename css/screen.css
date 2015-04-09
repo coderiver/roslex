@@ -277,7 +277,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .feedbacks .feedback:hover { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
 .feedbacks .feedback .feedback__author_photo { display: table-cell; vertical-align: top; padding-top: 17px; padding-left: 17px; }
 .feedbacks .feedback .feedback__photo_wrap { width: 130px; height: 130px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; border: 2px solid white; -moz-box-shadow: 0 0 24px #aaaaaa; -webkit-box-shadow: 0 0 24px #aaaaaa; box-shadow: 0 0 24px #aaaaaa; }
-.feedbacks .feedback .feedback__text { display: table-cell; vertical-align: top; padding: 16px 12px 32px 0; padding-top: 16px; padding-left: 32px; }
+.feedbacks .feedback .feedback__text { display: table-cell; vertical-align: top; padding: 4px 12px 0 32px; }
 .feedbacks .feedback .feedback__text .feedback__author_name { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 24px; }
 .feedbacks .feedback .feedback__text .feedback__review { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 12px; line-height: 1.1em; padding-top: 6px; }
 .feedbacks .feedback--brown .feedback:hover { -moz-box-shadow: 0 0 0 2px #634813; -webkit-box-shadow: 0 0 0 2px #634813; box-shadow: 0 0 0 2px #634813; }

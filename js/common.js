@@ -5,7 +5,7 @@ head.ready(function() {
 	  centerMode: true,
 	  slidesToScroll: 1,
 	  autoplay: true,
-	  autoplaySpeed: 2000,
+	  autoplaySpeed: 5000,
 	  variableWidth: true,
    arrows: false,
 });
@@ -14,7 +14,7 @@ head.ready(function() {
 	  centerMode: true,
 	  slidesToScroll: 1,
 	  autoplay: true,
-	  autoplaySpeed: 2500,
+	  autoplaySpeed: 5500,
 	  variableWidth: true,
    arrows: false,
 });
