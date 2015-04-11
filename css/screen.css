@@ -68,7 +68,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .nav--brown { background-color: #6e582c; *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF6E582C', endColorstr='#FF6E582C'); background-image: -moz-linear-gradient(left, #6e582c 45%, #866728 59%, #6e582c 73%); background-image: -webkit-linear-gradient(left, #6e582c 45%, #866728 59%, #6e582c 73%); background-image: linear-gradient(to right, #6e582c 45%, #866728 59%, #6e582c 73%); -moz-box-shadow: 0 -1px 1px #5b4925; -webkit-box-shadow: 0 -1px 1px #5b4925; box-shadow: 0 -1px 1px #5b4925; }
 
-.nav .nav__list { text-align: center; padding: 8px 0; }
+.nav .nav__list { text-align: center; padding: 8px 0; font-size: 0; }
 .nav .nav__list li { display: inline-block; font-size: 0; }
 .nav .nav__list li a { vertical-align: middle; position: relative; font-family: "PT Sans", Arial, sans-serif; font-size: 16px; text-decoration: none; padding: 0px 20px; }
 .nav .nav__list li a:after { content: "|"; position: absolute; display: inline-block; top: -6px; right: 0; font-size: 21px; }
@@ -342,7 +342,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .nav--orange { background-color: #fcbc69; }
 
-.nav__list--blue a { color: #516b85; }
+.nav__list--blue a { color: #445a70; }
 
 .promo__we--woman { background: url("../img/promo__woman.png") no-repeat 0 0; width: 319px; height: 484px; top: 35px; }
 
