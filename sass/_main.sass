@@ -163,7 +163,7 @@
 					border-bottom: 0 
 		.price_item__foo
 			position: absolute
-			// bottom: 0px
+			// bottom: 20px
 			// width: 93% 
 			.price_item__foo_text
 				width: 100%
@@ -198,10 +198,18 @@
 				+pt-b
 				// font-size: 22px 
 			.form
-				position: absolute
+				position: relative
 				// left: -50% 
 				z-index: 1
-				display: none 
+				// display: none 
+				.form__inputs
+					display: none
+					position: absolute
+					+translate(-25%, 0)
+					top: -150px
+				 	
+					
+				
 .ie, .ff
 	.price
 		.price_item__foo
@@ -410,6 +418,7 @@
 .work
 	background-position: 43% 0 
 	background-repeat: no-repeat 
+	padding-bottom: 45px 
 	.work__in
 		@extend %in
 		text-align: center
@@ -455,11 +464,16 @@
 		letter-spacing: 1px  
 		cursor: pointer
 	.form
-		display: none
+		// display: none
 		position: absolute
-		top: 185px 
+		// top: 185px 
 		left: 50%
 		+translate(-50%,0)
+		.form__inputs
+			display: none
+			position: absolute
+			top: -165px 
+			left: -11% 
 .documentation--brown		
 	// +box-shadow(0 0 3px 0px #4f3f20 inset)
 	&:after
@@ -572,9 +586,11 @@
 		max-width: 100% 
 	.slider__top
 		margin-bottom: 28px 
-	.feedback
+	.feed
 		width: 500px 
-		height: 160px 
+		min-height: 160px 
+		vertical-align: top
+		padding-bottom: 10px 
 		background-color: #FFF
 		display: inline-block 
 		margin: 0 10px 
@@ -605,11 +621,11 @@
 				line-height: 1.1em
 				padding-top: 6px  
 	.feedback--brown
-		.feedback
+		.feed
 			&:hover
 				+box-shadow(0 0 0 2px #634813)
 	.feedback--blue
-		.feedback
+		.feed
 			&:hover
 				+box-shadow(0 0 0 2px #072b4f)
 				

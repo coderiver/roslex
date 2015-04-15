@@ -14,6 +14,8 @@
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<link rel="stylesheet" media="all" href="css/jquery.flipcountdown.css">
 	<link href="css/lightbox.css" rel="stylesheet" >
+	<link href="feedback/css/jquery.jgrowl.css" rel="stylesheet" type="text/css">
+<!-- <link href="feedback/css/jquery.arcticmodal.css" rel="stylesheet" type="text/css"> -->
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
@@ -55,12 +57,12 @@
 				<p class="time_to">до конца акции осталось:</p>
 				<div class="form__timer">
 				</div>
-				<form action="" class="form">
+				<form method="post" name="form-1" class="form">
 					<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
-						<input type="text" placeholder="Введите имя">
-						<input type="text" placeholder="Введите телефон">
+						<input type="text" name="name" placeholder="Введите имя">
+						<input type="text" name="tell" placeholder="Введите телефон">
 					</div></div>
-					<input type="submit" class="button button--brown" value="получить скидку на ликвидацию">
+					<input type="button" class="button button--brown feedback button__sumbit" value="получить скидку на ликвидацию">
 				</form>
 				<p class="form__footer">100% гарантия конфиденциальности данных.</p>
 			</div>
@@ -97,13 +99,13 @@
 							<p class="price_item__num"><strong>24 000</strong> руб</p>
 							<p class="brown">2 посещения - 2 месяца</p>
 						</div>
-						<form action="" class="form copy-form">
+						<form method="post" name="form-1"class="form copy-form">
 							<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
-								<input type="text" placeholder="Введите имя">
-								<input type="text" placeholder="Введите телефон">
+								<input type="text" name="name" placeholder="Введите имя">
+								<input type="text" name="tell" placeholder="Введите телефон">
 							</div></div>
-							</form>
-						<input type="button" value="заказать" class="button js-open-price-form button--big button--brown">
+							<input type="button" value="заказать" class="button js-open-price-form button--big button--brown feedback button__sumbit">
+						</form>
 					</div>
 				</div></div>
 				</div>
@@ -127,13 +129,13 @@
 							<p class="price_item__num"><strong>24 000</strong> руб</p>
 							<p class="brown">Без Вашего участия - 2 месяца</p>
 						</div>
-						<form action="" class="form copy-form">
+						<form method="post" name="form-1"class="form copy-form">
 							<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
-								<input type="text" placeholder="Введите имя">
-								<input type="text" placeholder="Введите телефон">
+								<input type="text" name="name" placeholder="Введите имя">
+								<input type="text" name="tell" placeholder="Введите телефон">
 							</div></div>
-							</form>
-						<input type="button" value="заказать" class="button js-open-price-form button--big button--brown">
+							<input type="button" value="заказать" class="button js-open-price-form button--big button--brown feedback button__sumbit">
+						</form>
 					</div>
 				</div></div>
 				</div>
@@ -160,13 +162,13 @@
 							<p class="price_item__num"><strong>24 000</strong> руб</p>
 							<p class="brown">2 посещения - 2 месяца</p>
 						</div>
-						<form action="" class="form copy-form">
+						<form method="post" name="form-1"class="form copy-form">
 							<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
-								<input type="text" placeholder="Введите имя">
-								<input type="text" placeholder="Введите телефон">
+								<input type="text" name="name" placeholder="Введите имя">
+								<input type="text" name="tell" placeholder="Введите телефон">
 							</div></div>
-							</form>
-						<input type="button" value="заказать" class="button js-open-price-form button--big button--brown">
+							<input type="button" value="заказать" class="button js-open-price-form button--big button--brown feedback button__sumbit">
+						</form>
 					</div>
 				</div></div>
 				</div>
@@ -190,13 +192,13 @@
 							<p class="price_item__num"><strong>41 000</strong> руб</p>
 							<p class="brown">1 посещение - 1 день</p>
 						</div>
-						<form action="" class="form copy-form">
+						<form method="post" name="form-1"class="form copy-form">
 							<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
-								<input type="text" placeholder="Введите имя">
-								<input type="text" placeholder="Введите телефон">
+								<input type="text" name="name" placeholder="Введите имя">
+								<input type="text" name="tell" placeholder="Введите телефон">
 							</div></div>
-							</form>
-						<input type="button" value="заказать" class="button js-open-price-form button--big button--brown">
+							<input type="button" value="заказать" class="button js-open-price-form button--big button--brown feedback button__sumbit">
+						</form>
 					</div>
 				</div></div>
 				</div>
@@ -236,13 +238,13 @@
 				</article>
 				</div>
 			</div>
-			<form action="" class="form work-form copy-form">
+			<form method="post" name="form-1" class="form work-form copy-form">
 				<div class="form__inputs form__inputs_regular"><div class="form__inputs_in">
-					<input type="text" placeholder="Введите имя">
-					<input type="text" placeholder="Введите телефон">
+					<input type="text" name="name" placeholder="Введите имя">
+					<input type="text" name="tell" placeholder="Введите телефон">
 				</div></div>
+				<input type="button" class="button button--brown js-open-work-form feedback button__sumbit" value="отправить заявку на консультацию">
 			</form>
-			<input type="button" class="button button--brown js-open-work-form" value="отправить заявку на консультацию">
 		</div></div>
 		<!-- END work -->
 		<!-- BEGIN getting  -->
@@ -307,13 +309,13 @@
 		<div class="action__form form_size_small">
 			<p class="action_end">до конца акции осталось</p>
 			<div class="form__timer form__timer--brown form__timer_size_big"></div>
-			<form action="" class="form">
+			<form method="post" name="form-1" class="form">
 				<div class="form__inputs form__inputs--dbrown">
 					<div class="form__inputs_in">
-					<input type="text" placeholder="Введите имя">
-					<input type="text" placeholder="Введите телефон">
+					<input type="text" name="name" placeholder="Введите имя">
+					<input type="text" name="tell" placeholder="Введите телефон">
 				</div></div>
-				<input type="submit" class="button button--brown" value="получить скидку по акции">
+				<input type="submit" class="button button--brown feedback button__sumbit" value="получить скидку по акции">
 			</form>
 		</div>
 	</div></div>
@@ -403,7 +405,7 @@
 		<p class="feedbacks__header feedbacks__header--brown">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</p>
 		<div class="slider">
 	    <div class="slider__top feedback--brown">
-			<div class="feedback ">
+			<div class="feed">
 				<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 					<img src="img/feed_5.png" alt="">
 				</div></div>
@@ -414,7 +416,7 @@
 					</p>
 				</div>
 			</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_1.png" alt="">
 					</div></div>
@@ -425,7 +427,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_2.png" alt="">
 					</div></div>
@@ -436,7 +438,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_4.png" alt="">
 					</div></div>
@@ -447,7 +449,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_3.png" alt="">
 					</div></div>
@@ -460,7 +462,7 @@
 				</div>
 			</div>
 	    <div class="slider__bottom feedback--brown">
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_8.png" alt="">
 					</div></div>
@@ -471,7 +473,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_7.png" alt="">
 					</div></div>
@@ -482,7 +484,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_6.png" alt="">
 					</div></div>
@@ -493,7 +495,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_10.png" alt="">
 					</div></div>
@@ -504,7 +506,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_9.png" alt="">
 					</div></div>
@@ -525,13 +527,13 @@
 		<div class="action__form form_size_small">
 			<p class="action_end">до конца акции осталось</p>
 			<div class="form__timer form__timer--brown form__timer_size_big"></div>
-			<form action="" class="form">
+			<form method="post" name="form-1" class="form">
 				<div class="form__inputs form__inputs--dbrown">
 					<div class="form__inputs_in">
-					<input type="text" placeholder="Введите имя">
-					<input type="text" placeholder="Введите телефон">
+					<input type="text" name="name" placeholder="Введите имя">
+					<input type="text" name="tell" placeholder="Введите телефон">
 				</div></div>
-				<input type="submit" class="button button--brown" value="получить скидку по акции">
+				<input type="submit" class="button button--brown feedback button__sumbit" value="получить скидку по акции">
 			</form>
 		</div>
 	</div></div>
@@ -554,8 +556,10 @@
 	  </div>
 	  <div class="footer__form">
 	  	<p class="footer__form_header">Заказать обратный звонок</p>
-	  	<input type="text" placeholder="Введите телефон" class="footer__form_input">
-	  	<input type="button" value="ЗАКАЗАТЬ" class="button button--brown">
+	  	<form method="post" name="form-2" class="form">	  	
+		  	<input type="text" name="tell" placeholder="Введите телефон" class="footer__form_input">
+		  	<input type="button" value="ЗАКАЗАТЬ" class="button button--brown feedback">
+	  	</form>
 	  </div>
 	</div>
 	<!-- END footer -->

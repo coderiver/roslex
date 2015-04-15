@@ -1,5 +1,4 @@
 head.ready(function() {
-
 	$('.slider__top').slick({
 	  slidesToShow: 3,
 	  centerMode: true,
@@ -83,26 +82,21 @@ $('.js-contacts').click(function(){
 	 scrollTo(position);
 });
 $('.js-open-work-form').hover(function(event) {
-	$('.work-form').fadeIn();
-},
-	function() {
-	$('.work-form').hide();
-
-	}
-);
+	$(this).siblings('.form__inputs').fadeIn();
+});
 var $priceForm = $('.copy-box .copy-form');
 $('.js-open-price-form').hover(function(){
-	$(this).siblings('.form').fadeIn();
-	$('.price_item__foo').not($(this).parent()).find('.form').fadeOut('fast')
-},
-	function() {
-	$('.work-form').hide();
+	$(this).siblings('.form__inputs').fadeIn();
+	$('.copy-form').not($(this).parent()).find('.form__inputs').fadeOut('fast')
+}
+	// function() {
+	// $('.work-form').hide();
 
-	});
+	);
 
 $(document).click(function(event) {
     if ($(event.target).closest(".copy-form").length) return;
-    $(".copy-form").fadeOut('fast');
+    $(".copy-form .form__inputs").fadeOut('fast');
     event.stopPropagation();
 });
 // $(document).scroll(function(){
@@ -131,5 +125,10 @@ $('.js-up').click(function(){
 	$('body, html').animate({
 		scrollTop: 0
 		},1100,'easeInOutCirc');
-})
+});
+$(document).ready(function() {
+    $(document).on('click', '.modal_btn', function(){
+        // $('#small-modal').arcticmodal();
+    });
+	});
 });

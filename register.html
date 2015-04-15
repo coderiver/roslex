@@ -17,6 +17,8 @@
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<link rel="stylesheet" media="all" href="css/jquery.flipcountdown.css">
 	<link href="css/lightbox.css" rel="stylesheet" >
+	<link href="feedback/css/jquery.jgrowl.css" rel="stylesheet" type="text/css">
+	<!-- <link href="feedback/css/jquery.arcticmodal.css" rel="stylesheet" type="text/css"> -->
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
@@ -58,13 +60,13 @@
 				<p class="time_to">до конца акции осталось:</p>
 				<div class="form__timer">
 				</div>
-				<form action="" class="form">
+				<form method="post" name="form-1" class="form">
 					<div class="form__inputs form__inputs_orange"><div class="form__inputs_in">
-						<input type="text" placeholder="Введите имя">
-						<input type="text" placeholder="Введите телефон">
+						<input type="text" name="name" placeholder="Введите имя">
+						<input type="text" name="tell" placeholder="Введите телефон">
 					</div></div>
-					<input type="submit" class="button button--orange" value="получить скидку на ликвидацию">
-				</form>
+					<input type="submit" class="button button--orange feedback button__sumbit" value="получить скидку на ликвидацию">
+				</form> 
 				<p class="form__footer">100% гарантия конфиденциальности данных.</p>
 			</div>
 		</div>
@@ -97,13 +99,13 @@
 							<p class="price_item__num"><strong>1 890</strong> руб</p>
 							<p class="blue">1 посещения - 2 недели</p>
 						</div>
-						<form action="" class="form copy-form">
+						<form method="post" name="form-1" class="form copy-form">
 							<div class="form__inputs form__inputs_orange"><div class="form__inputs_in">
-								<input type="text" placeholder="Введите имя">
-								<input type="text" placeholder="Введите телефон">
+								<input type="text" name="name" placeholder="Введите имя">
+								<input type="text" name="tell" placeholder="Введите телефон">
 							</div></div>
+							<input type="button" value="заказать" class="button js-open-price-form button--big button--orange feedback button__submit">
 						</form>
-						<input type="button" value="заказать" class="button js-open-price-form button--big button--orange">
 					</div>
 				</div></div>
 				</div>
@@ -128,13 +130,13 @@
 							<p class="price_item__num"><strong>6 890</strong> руб</p>
 							<p class="blue">2 посещения - 3 недели</p>
 						</div>
-						<form action="" class="form copy-form">
+						<form actmethod="post" name="form-1" class="form copy-form">
 							<div class="form__inputs form__inputs_orange"><div class="form__inputs_in">
-								<input type="text" placeholder="Введите имя">
-								<input type="text" placeholder="Введите телефон">
+								<input type="text" name="name" placeholder="Введите имя">
+								<input type="text" name="tell" placeholder="Введите телефон">
 							</div></div>
+							<input type="button" value="заказать" class="button js-open-price-form button--big button--orange feedback button__submit">
 							</form>
-						<input type="button" value="заказать" class="button js-open-price-form button--big button--orange">
 					</div>
 				</div></div>
 				</div>
@@ -159,13 +161,13 @@
 							<p class="price_item__num"><strong>8 890</strong> руб</p>
 							<p class="blue">2 посещение - 1 месяц</p>
 						</div>
-						<form action="" class="form copy-form">
+						<form actmethod="post" name="form-1" class="form copy-form">
 							<div class="form__inputs form__inputs_orange"><div class="form__inputs_in">
-								<input type="text" placeholder="Введите имя">
-								<input type="text" placeholder="Введите телефон">
+								<input type="text" name="name" placeholder="Введите имя">
+								<input type="text" name="tell" placeholder="Введите телефон">
 							</div></div>
+							<input type="button" value="заказать" class="button js-open-price-form button--big button--orange feedback button__submit">
 							</form>
-						<input type="button" value="заказать" class="button js-open-price-form button--big button--orange">
 					</div>
 				</div></div>
 				</div>
@@ -205,13 +207,13 @@
 				</article>
 				</div>
 			</div>
-			<form action="" class="form work-form copy-form">
+			<form method="post" name="form-1" class="form work-form copy-form">
 				<div class="form__inputs form__inputs_orange"><div class="form__inputs_in">
-					<input type="text" placeholder="Введите имя">
-					<input type="text" placeholder="Введите телефон">
+					<input type="text" name="name" placeholder="Введите имя">
+					<input type="text" name="tell" placeholder="Введите телефон">
 				</div></div>
+				<input type="button" class="button button--orange js-open-work-form feedback button__sumbit" value="отправить заявку на консультацию">
 			</form>
-			<input type="button" class="button button--orange js-open-work-form" value="отправить заявку на консультацию">
 		</div></div>
 		<!-- END work -->
 <!-- BEGIN getting  -->
@@ -275,13 +277,13 @@
 		<div class="action__form form_size_small">
 			<p class="action_end">до конца акции осталось</p>
 			<div class="form__timer form__timer_size_big form__timer--blue"></div>
-			<form action="" class="form">
+			<form method="post" name="form-1" class="form">
 				<div class="form__inputs form__inputs--dorange">
 					<div class="form__inputs_in">
-					<input type="text" placeholder="Введите имя">
-					<input type="text" placeholder="Введите телефон">
+					<input type="text" name="name" placeholder="Введите имя">
+					<input type="text" name="tell" placeholder="Введите телефон">
 				</div></div>
-				<input type="submit" class="button button--orange" value="получить скидку по акции">
+				<input type="submit" class="button button--orange feedback button__submit" value="получить скидку по акции">
 			</form>
 		</div>
 	</div></div>
@@ -372,115 +374,116 @@
 		<p class="feedbacks__header feedbacks__header--blue">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</p>
 		<div class="slider">
 	    <div class="slider__top feedback--blue">
-			<div class="feedback ">
+			<div class="feed">
 				<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 					<img src="img/feed_5.png" alt="">
 				</div></div>
 				<div class="feedback__text">
-					<h2 class="feedback__author_name">Ефим</h2>
+					<h2 class="feedback__author_name">Петр Романов</h2>
 					<p class="feedback__review">
-						Закрылось мое ООО. Необходимо было ликвидировать фирму. Обратился в юридическую фирму "Рослекс". Опытные юристы подготовили мне все необходимые документы для ликвидации, сами вели все необходимые переговоры с государственными органами, что сэкономило мне много драгоценного время. Я остался полностью доволен и не жалею, что обратился в эту фирму.
+						Попал в ДТП. Невнимательный водитель въехал в задок. Не очень сильный удар, но все же испортил довольно дорогой задний бампер недешевой машины. Вину свою не отрицал, охотно подписал Евро-протокол, оставил свои контакты. Обратился в его страховую "РЕСО-Гарантия" за возмещением ущерба. Заставили съездить завести сберкнижку (открыть счет в сбербанке), фотографии повреждений отправили на оценку в центральный офис в Москву. После долгого ожидания признали ущерб несущественным и отказали в выплате. На помощь пришла юридическая фирма "РОСЛЕКС", за что ей огромное спасибо. С помощью ее специалистов удалось добиться признания факта ущерба и получить справедливую выплату за полученный ущерб. Спасибо большое за помощь!
 					</p>
 				</div>
 			</div>
-				<div class="feedback">
-					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
-						<img src="img/feed_1.png" alt="">
-					</div></div>
-					<div class="feedback__text">
-						<h2 class="feedback__author_name">Марина</h2>
-						<p class="feedback__review">
-							Обратилась в данную фирму по вопросу ликвидации предприятия . Получила грамотную консультацию по всем интересующим меня вопросам. Специалисты подготовили комплект необходимых документов для ликвидации фирмы . В результате качественной работы я была избавлена от всех волнений. Со всей ответственностью могу рекомендовать команду РОСЛЕКС как экспертов в данном вопросе .
-						</p>
-					</div>
-				</div>
-				<div class="feedback">
-					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
-						<img src="img/feed_2.png" alt="">
-					</div></div>
-					<div class="feedback__text">
-						<h2 class="feedback__author_name">Ярослав</h2>
-						<p class="feedback__review">
-							Мне понравилось сотрудничать с этой компанией. Она предоставляет широкий спектр юридических услуг, что позволяет мне как предпринимателю, да и не только мне, ликвидировать свою фирму без всяких заморочек. Гарантии фирмы высокие. Что касается платы за услуги компании, то довольно таки приятные и доступные цены по сравнению с рыночными. Вообщем сотрудники фирмы не зря получают зарплату.
-						</p>
-					</div>
-				</div>
-				<div class="feedback">
-					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
-						<img src="img/feed_4.png" alt="">
-					</div></div>
-					<div class="feedback__text">
-						<h2 class="feedback__author_name">RAAlex</h2>
-						<p class="feedback__review">
-							Услугами специалистов юридической фирмы РОСЛЕКС воспользовался для ликвидации ОАО. Юридическую сторону вопроса целиком и полностью выполнили специалисты фирмы, а это и оформление документов и ведение переговоров и многое, многое другое. Также получил консультацию по многим интересующим вопросам. С грамотными людьми всегда приятно иметь дело.
-						</p>
-					</div>
-				</div>
-				<div class="feedback">
+			<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_3.png" alt="">
 					</div></div>
 					<div class="feedback__text">
-						<h2 class="feedback__author_name">Надежда Александровна</h2>
+						<h2 class="feedback__author_name">Оксана Германенко</h2>
 						<p class="feedback__review">
-							Хотела выразить благодарность Вашей компании за оперативность и качество оказанных услуг! Обращались за реорганизацией нашей фирмы. В связи со сложившимися обстоятельствами, необходимо было сделать все очень быстро. Приятно удивили! Настоящие профессионалы своего дела! Обязательно буду Вас советовать знакомым! Ну и дополнительно порадовали скидкой).
+							Именно благодаря работе юридической фирме " Рослекс" на конец то был произведен раздел совместно нажитого мной и моим бывшим мужем имущества. Это дело тянулось бы бесконечно долго, постоянные судебные заседания и волокита, а у меня не было ни сил, ни желания во всем этом участвовать. Доверилась " Рослекс" и не пожалела) квалифицированные юристы, настоящие профессионалы в своем деле.
 						</p>
 					</div>
 				</div>
+				<div class="feed">
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_1.png" alt="">
+					</div></div>
+					<div class="feedback__text">
+						<h2 class="feedback__author_name">Татьяна Николаевна</h2>
+						<p class="feedback__review">
+							Огромное спасибо Вам за оказание юридической помощи! С моей проблемой мне отказали в нескольких фирмах. Мне необходимо было узаконить и официально оформить договор договор купли-продажи на дом, который я купила в прошлом году по доверенности у человека, который вовремя не вступил в наследство после смерти бабушки, не имел на этот дом завещания и к сожалению растерял часть документов на этот дом. Так что после фактического расчета с ним, я не имела возможности ни вернуть свои деньги, ни зарегистрировать на себя купленное мною имущество. Только в компании Рослекс взялись мне помочь в таком сложном деле- и помогли! Восстановили все утерянные документы, через суд помогли вступить в наследство и зарегистрировать дом на меня! Благодаря безупречной и профессиональной работе сотрудников компании я стала полноправной владелицей своего дома! Еще раз Спасибо Вам!
+						</p>
+					</div>
+				</div>
+				<div class="feed">
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_2.png" alt="">
+					</div></div>
+					<div class="feedback__text">
+						<h2 class="feedback__author_name">Роман</h2>
+						<p class="feedback__review">
+							Для своего бизнеса долго сомневался, что выбрать ИП, ПБОЮЛ или вообще ООО. Обратился за консультацией, очень грамотно растолковали все нюансы. В итоге заказал подготовку полного пакета документов и помощь в регистрации. Абсолютно не жалею потраченных денег, иначе с нашей бюрократией просто запарился бегать по всем инстанциям. Спасибо, я очень доволен и рекомендую!
+						</p>
+					</div>
+				</div>
+				<div class="feed">
+					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
+						<img src="img/feed_4.png" alt="">
+					</div></div>
+					<div class="feedback__text">
+						<h2 class="feedback__author_name">Виктор</h2>
+						<p class="feedback__review">
+							Хочу поделиться хорошим отзывом об этой компании. Дело в том, что на заре своей предпринимательской деятельности, я не был подкован в этом деле, и специалисты этой фирмы меня проконсультировали, можно сказать дали билет в этот долгий и нелегкий путь. Помогли понять и изучить всякие подводные камни нашей законодательной базы. Буду вечно им благодарен за это.
+						</p>
+					</div>
+				</div>
+				
 			</div>
 	    <div class="slider__bottom feedback--blue">
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_8.png" alt="">
 					</div></div>
 					<div class="feedback__text">
-						<h2 class="feedback__author_name">Сергей Иванович</h2>
+						<h2 class="feedback__author_name">Влад</h2>
 						<p class="feedback__review">
-							Пришло время закрыть свое частное предприятие. Зная от друзей какое это хлопотное дело (бесконечная беготня с бумажками по различным учреждениям ), обратился в фирму РОСЛЕКС. Ознакомившись с расценками за оказываемые услуги,сроками выполнения. Они меня полностью устроили. Заключил Договор. Все было сделано в обговоренные сроки. Качество работы хорошее. Сотрудники на своем месте!
+							Когда мой друг только открывал свою фирму, то РОСЛЕКС был как нельзя кстати. Заказывали у них изготовление специальной печати предприятия, а позднее через них открывали расчетный счет в банке. Время от времени они нам помогали улаживать всякие юридические вопросы и даже конфликты. Очень хорошая фирма, квалифицированные сотрудники, и в целом, приятно с ними работать.
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_7.png" alt="">
 					</div></div>
 					<div class="feedback__text">
-						<h2 class="feedback__author_name">NNatasha</h2>
+						<h2 class="feedback__author_name">Наталья</h2>
 						<p class="feedback__review">
-							Бизнес пришлось свернуть, поэтому возник вопрос о ликвидации предприятия (ООО). Попытались самостоятельно, но поняли, что не потянем. Обратились за помощью сюда. Ликвидировались через продажу, так как были непогашенные обязательства. Спасибо за помощь в подготовке документов, а так же грамотные юридические и бухгалтерские консультации. Процедура прошла уверенно и спокойно.
+							При возникновении задачи регистрации фирмы, столкнулись с проблемой к кому обратиться, ведь услуг таких предоставляется немало, а вот чтоб были компетентные и добросовестные люди уже другой вопрос, коллеги посоветовали данную фирму "Рослекс" мы обратились и не пожалели ни минуты, увидели четкую профессиональную работу, может при самомтоятельном оформлении оно и можно съэкономить на подготовке документации, но нервов и беготни потребует немало и оно того не стоит, лучше доверить все профессионалам, которые, как убедились, и работают в фирме "Рослекс".
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_6.png" alt="">
 					</div></div>
 					<div class="feedback__text">
-						<h2 class="feedback__author_name">Елена</h2>
+						<h2 class="feedback__author_name">Vitmar</h2>
 						<p class="feedback__review">
-							В РОСЛЕКС обращалась для ликвидации моего предприятия (фирма занималась производством сумок). Воспользовались официальной ликвидацией. У нас были небольшое бюджетные задолжности, которые пришлось погасить для того, чтобы ликвидировать фирму официально. В целом, работа компании понравилась. Высококвалифицированные специалисты, быстрая и качественная работа.
+							Пол года назад обратилась в Юридическая фирма "РОСЛЕКС", с целью регистрации индивидуальной предпринимательской деятельности. Порекомендовали друзья как ответственную фирму. Что и подтверждаю. Созвонившись, перечислили пакет необходимых документов, которые на следующий день я подвёз. И к моему удивлению через три дня всё было подготовлено. Впоследствии с документацией проблем не возникало. Считаю сделано оперативно, грамотно и надёжно.
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_10.png" alt="">
 					</div></div>
 					<div class="feedback__text">
-						<h2 class="feedback__author_name">Валерий Иванович</h2>
+						<h2 class="feedback__author_name">Романов Максим Петрович</h2>
 						<p class="feedback__review">
-							Проводили реорганизацию своего предприятия и нужно было с юридической точки зрения все грамотно это сделать. Обратился в эту фирму по совету коллеги, они сказали, что могут мне помочь, подготовят весь пакет необходимых документов и урегулируют в исполкоме, так как у меня нет времени на это. Если возникнет подобный вопрос, то лучше обратиться к профессионалам.
+							Здравствуйте!Пришлось воспользоватся услугами юридической фирмы "Рослекс".Консультировался по поводу оформления и регистрации нового предприятия.Предварительно перед этим созвонился,ответил секретарь и назначил мне встречу с юристом.Все прошло хорошо, в уютной обстановке.Я узнал все что нужно было. Что касается цены,то все устроило.Как для юр.организации,то прайс-лист адекватный.Спасибо!
 						</p>
 					</div>
 				</div>
-				<div class="feedback">
+				<div class="feed">
 					<div class="feedback__author_photo"><div class="feedback__photo_wrap">
 						<img src="img/feed_9.png" alt="">
 					</div></div>
 					<div class="feedback__text">
-						<h2 class="feedback__author_name">Yuliya1995</h2>
+						<h2 class="feedback__author_name">Евгения</h2>
 						<p class="feedback__review">
-							Рослекс-отличная компания, которая оказывает очень полезные услуги по ликвидации предприятий и организаций. В компании работают настоящие профессионалы, которые способны оказать грамотную и компетентную помощь в вопросе оформления документов при ликвидации фирмы. Очень удобно, что Рослекс предлагает различные пути ликвидации, как официально, так и через договор купли-продажи.
+							Услугами данной компании я уже довольно давно пользуюсь. Еще когда только-только свой бизнес открывала, обращалась в эту компанию за помощью в регистрации как индивидуального предпринимателя. Оперативно и быстро мне пакет документов помогли собрать, проконсультировали по всем интересующим меня вопросам, даже несколько советов дали по поводу дальнейшего развития бизнеса. В общем, услугами компании я осталась очень довольна!
 						</p>
 					</div>
 				</div>
@@ -495,13 +498,13 @@
 		<div class="action__form form_size_small">
 			<p class="action_end">до конца акции осталось</p>
 			<div class="form__timer form__timer_size_big form__timer--blue"></div>
-			<form action="" class="form">
+			<form actmethod="post" name="form-1" class="form">
 				<div class="form__inputs form__inputs--dorange">
 					<div class="form__inputs_in">
-					<input type="text" placeholder="Введите имя">
-					<input type="text" placeholder="Введите телефон">
+					<input type="text" name="name" placeholder="Введите имя">
+					<input type="text" name="tell" placeholder="Введите телефон">
 				</div></div>
-				<input type="submit" class="button button--orange" value="получить скидку по акции">
+				<input type="submit" class="button button--orange feedback button__submit" value="получить скидку по акции">
 			</form>
 		</div>
 	</div></div>
@@ -527,8 +530,10 @@
 	  </div>
 	  <div class="footer__form">
 	  	<p class="footer__form_header">Заказать обратный звонок</p>
-	  	<input type="text" placeholder="Введите телефон" class="footer__form_input">
-	  	<input type="button" value="ЗАКАЗАТЬ" class="button button--orange">
+	  	<form method="post" name="form-2" class="form">	  	
+		  	<input type="text" name="tell" placeholder="Введите телефон" class="footer__form_input">
+		  	<input type="button" value="ЗАКАЗАТЬ" class="button button--orange feedback">
+	  	</form>
 	  </div>
 	</div>
 	<!-- END footer -->
