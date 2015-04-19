@@ -112,11 +112,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .promo .promo__info .promo__info-form p { text-align: center; }
 .promo .promo__info .promo__info-form .time_to { font-family: "PT Sans", Arial, sans-serif; font-style: italic; color: #dedcda; font-size: 14px; margin-bottom: 10px; }
 .promo .promo__info .form__timer { text-align: center; height: 71px; }
-.promo .promo__info .form__timer figcaption { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 9px; color: white; }
-.promo .promo__info .form__timer figure { width: 84px !important; max-width: 84px !important; }
-.promo .promo__info .form__timer figure li { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #424242; font-size: 40px; padding-top: 3px; }
-.promo .promo__info .form__timer figure > div { margin-right: 0 !important; height: 49px !important; background-color: transparent; background-image: url("../img/timer_bg.png"); border: 0; }
-.promo .promo__info .form__timer span { display: none; }
+.promo .promo__info .form__timer .countdown-amount { font-size: 200%; margin-right: 0 !important; background-color: transparent; background-image: url("../img/timer_bg.png"); border: 0; background-repeat: no-repeat; font-size: 35px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #424242; font-size: 40px; padding-top: 3px; background-position: 48px 6px; letter-spacing: 10px; position: relative; top: -5px; z-index: 1; }
+.promo .promo__info .form__timer .countdown-amount:after { content: ""; display: block; z-index: -1; background-image: url("../img/timer_bg.png"); background-repeat: no-repeat; position: absolute; left: 15px; top: 6px; width: 33px; height: 50px; }
+.promo .promo__info .form__timer .countdown-period { display: block; font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 9px; color: white; }
 .promo .promo__info .form__footer { margin-top: 15px; font-family: "PT Sans", Arial, sans-serif; color: white; font-size: 13px; }
 .promo .promo__we { position: absolute; right: 0px; top: 0; }
 .promo .promo__we .promo__we-photo { position: relative; display: inline-block; }
@@ -172,12 +170,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .action .action__form .action_end { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; font-size: 21px; color: #3d3837; margin: 5px 0; }
 .action .action__form .form__timer--blue figcaption { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 9px; color: #516b85; }
 .action .action__form .form__timer--browm figcaption { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 9px; color: #825b23; }
-.action .action__form .form__timer_size_big { height: 90px; margin: 0 auto; }
-.action .action__form .form__timer_size_big figcaption { font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 9px; }
-.action .action__form .form__timer_size_big figure { width: 101px !important; max-width: 101px !important; display: inline-block; overflow: hidden; }
-.action .action__form .form__timer_size_big figure li { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #424242; font-size: 50px; height: 50px; padding-left: 3px; }
-.action .action__form .form__timer_size_big figure > div { overflow: hidden; margin-right: 0 !important; padding-left: 10px; height: 67px !important; background-color: transparent; background-image: url("../img/timer_big_bg.png"); border: 0; background-position-y: -1px; }
-.action .action__form .form__timer_size_big span { display: none; }
+.action .action__form .form__timer_size_big { height: 90px; width: 456px; margin: 0 auto; }
+.action .action__form .form__timer_size_big .countdown-amount { margin-right: 0 !important; height: 75px; background-color: transparent; background-image: url("../img/timer_big_bg.png"); border: 0; background-repeat: no-repeat; font-size: 35px; font-family: "PT Sans", Arial, sans-serif; font-weight: 700; color: #424242; font-size: 50px; background-position: 48px 0px; letter-spacing: 20px; position: relative; top: -5px; z-index: 1; }
+.action .action__form .form__timer_size_big .countdown-amount:after { content: ""; display: block; z-index: -1; background-image: url("../img/timer_big_bg.png"); background-repeat: no-repeat; position: absolute; left: 0px; top: 0px; width: 45px; height: 70px; }
+.action .action__form .form__timer_size_big .countdown-period { display: block; font-family: "PT Sans", Arial, sans-serif; font-style: italic; font-size: 9px; color: #825b23; }
 .action .action__form .button { width: 330px; margin-left: -6px; }
 
 .guarantees--brown { background-color: #f9f9f9; border-top: 1px solid #825b23; border-bottom: 1px solid #825b23; }
@@ -397,3 +393,28 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .price_item__info--brown li { border-bottom: 1px solid #282620; color: #282620; }
 
 .price_item__info--blue li { color: #516b85; border-bottom: 1px solid black; }
+
+.countdown-rtl { direction: rtl; }
+
+.countdown-holding span { color: #888888; }
+
+.countdown-row { clear: both; width: 100%; padding: 0px 2px; text-align: center; }
+.countdown-row span { display: block; }
+
+.countdown-show1 .countdown-section { width: 98%; }
+
+.countdown-show2 .countdown-section { width: 48%; }
+
+.countdown-show3 .countdown-section { width: 32.5%; }
+
+.countdown-show4 .countdown-section { width: 24.5%; }
+
+.countdown-show5 .countdown-section { width: 19.5%; }
+
+.countdown-show6 .countdown-section { width: 16.25%; }
+
+.countdown-show7 .countdown-section { width: 14%; }
+
+.countdown-section { display: inline-block; float: left; font-size: 75%; text-align: center; }
+
+.countdown-descr { display: block; width: 100%; color: red; }

@@ -7,4 +7,7 @@ head.load("js/lib/jquery.js",
 					"js/feedback.js",
 					"js/jquery.arcticmodal.js",
 					"js/jquery.jgrowl.js",
+					"js/lib/jquery.plugin.min.js",
+					"js/lib/jquery.countdown.min.js",
+					"js/lib/jquery.countdown-ru.js",
 					"js/common.js");

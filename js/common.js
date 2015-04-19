@@ -17,15 +17,34 @@ head.ready(function() {
 	  variableWidth: true,
    arrows: false,
 });
-$('.form__timer').timeTo({
-    timeTo: new Date(new Date('Thu Apr 15 2015 09:00:00 GMT+0300 (Финляндия (лето))')),
-    displayDays: 2,
-    // theme: "w",
-    displayCaptions: true,
-    fontSize: 35,
-    captionSize: 14,
-    lang: 'ru'
-});
+// function getMonday(d) {
+//   d = new Date(d);
+//   var day = d.getDay(),
+//       diff = d.getDate() - day + (day == 0 ? -6:1); // adjust when day is sunday
+//   return new Date(d.setDate(diff + 7));
+// }
+
+// da = String(getMonday(new Date()));
+// $('.form__timer').timeTo({
+//     timeTo: new Date(new Date(da.substring(0, 15))),
+//     displayDays: 2,
+//     displayCaptions: true,
+//     fontSize: 35,
+//     captionSize: 14,
+//     lang: 'ru'
+// });
+function getMonday(d) {
+  d = new Date(d);
+  var day = d.getDay(),
+      diff = d.getDate() - day + (day == 0 ? -6:1); // adjust when day is sunday
+  return new Date(d.setDate(diff + 7));
+}
+
+da = String(getMonday(new Date()));
+// da.substring(0, 15)
+var liftoffTime = new Date();
+liftoffTime.setDate(liftoffTime.getDate() + 5);
+$('.form__timer').countdown({until: new Date(da.substring(0, 15)), padZeroes: true, format: 'DDHHMMSS'});
 $('.nav__list a').click(function(event){
 	event.preventDefault();});
 $('.js-guaranties').click(function(){
