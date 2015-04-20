@@ -31,8 +31,49 @@ $form['form-1'] = array(
         ),
         'cfg' => array(
                 'charset' => 'utf-8',
-                'subject' => 'Тема письма',
-                'title' => 'Заголовок в теле письма',
+                'subject' => 'Заявка с likvidacia.roslex.ru',
+                'title' => 'Меня интересует ликвидация со скидкой 10%. Перезвоните мне пожалуйста.',
+                'ajax' => true,
+                'validate' => true,
+                'from_email' => 'noreply@email.com',
+                'from_name' => 'noreply',
+                'to_email' => 'domenroslex@yandex.ru, info@roslex.ru',
+                'to_name' => 'Admin',
+                'geoip' => true,
+                'referer' => true,
+                'type' => 'html',
+                'tpl' => true,
+                'antispam' => 'email77',
+                'antispamjs' => 'address77',
+                'okay' => 'Сообщение отправлено - OK',
+                'fuck' => 'Сообщение отправлено - ERROR',
+                'spam' => 'Cпам робот',
+                'notify' => 'color-modal-textbox',
+                'usepresuf' => false
+        )
+);
+$form['form-3'] = array(
+        'fields' => array(
+                'name' => array(
+                        'title' => 'Имя',
+                        'validate' => array(
+                                'preg' => '%[A-Z-a-zА-Яа-я\s]%',
+                                'minlength' => '3',
+                                'maxlength' => '35',
+                        )
+                ),
+                'tell' => array(
+                        'title' => 'Телефон',
+                        'validate' => array(
+                                'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
+                                'minlength' => '5',
+                        )
+                ),
+        ),
+        'cfg' => array(
+                'charset' => 'utf-8',
+                'subject' => 'Заявка с registracia.roslex.ru',
+                'title' => 'Меня интересует регистрация со скидкой 30%. Перезвоните мне пожалуйста.',
                 'ajax' => true,
                 'validate' => true,
                 'from_email' => 'noreply@email.com',
