@@ -95,8 +95,8 @@
 					</ul>
 					<div class="price_item__foo">
 						<div class="price_item__foo_text">
-							<p class="brown">СТОИМОСТЬ: <span><span class="cross">27 000</span> руб.</span></p>
-							<p class="price_item__num"><strong>24 000</strong> руб</p>
+							<p class="brown">СТОИМОСТЬ: <span><span class="cross">40 000</span> руб.</span></p>
+							<p class="price_item__num"><strong>34 800</strong> руб</p>
 							<p class="brown">2 посещения - 2 месяца</p>
 						</div>
 						<form method="post" name="form-1"class="form copy-form">
@@ -125,8 +125,8 @@
 					</ul>
 					<div class="price_item__foo">
 						<div class="price_item__foo_text">
-							<p class="brown">СТОИМОСТЬ: <span><span class="cross">28 000</span> руб.</span></p>
-							<p class="price_item__num"><strong>24 000</strong> руб</p>
+							<p class="brown">СТОИМОСТЬ: <span><span class="cross">42 000</span> руб.</span></p>
+							<p class="price_item__num"><strong>37 000</strong> руб</p>
 							<p class="brown">Без Вашего участия - 2 месяца</p>
 						</div>
 						<form method="post" name="form-1"class="form copy-form">
@@ -188,8 +188,8 @@
 					</ul>
 					<div class="price_item__foo">
 						<div class="price_item__foo_text">
-							<p class="brown">СТОИМОСТЬ: <span><span class="cross">53 000</span> руб.</span></p>
-							<p class="price_item__num"><strong>41 000</strong> руб</p>
+							<p class="brown">СТОИМОСТЬ: <span><span class="cross">38 000</span> руб.</span></p>
+							<p class="price_item__num"><strong>32 000</strong> руб</p>
 							<p class="brown">1 посещение - 1 день</p>
 						</div>
 						<form method="post" name="form-1"class="form copy-form">
@@ -251,10 +251,10 @@
 		<div class="getting">
 			<p class="header-linear header-linear--brown"><span>ЧТО ВЫ ПОЛУЧИТЕ</span></p>
 			<div class="getting__in">
-				<div class="getting__list">
+				<div class="getting__list getting__list-s">
 					<a href="img/get_1.jpg" data-lightbox="roadtrip" data-title=""><img src="img/get_1.jpg"></a>
 					<a href="img/get_2.jpg" data-lightbox="roadtrip" data-title=""><img src="img/get_2.jpg"></a>
-					<a href="img/get_3.jpg" data-lightbox="roadtrip" data-title=""><img src="img/get_3.jpg"></a>
+					<a href="img/get_3.jpg" data-lightbox="roadtrip" data-title=""><img src="img/get_3.jpg" width="100"></a>
 				</div>
 			</div>	
 		</div>
@@ -574,7 +574,7 @@ function init () {
 	var map = new ymaps.Map("ymap", {
 	    center: [59.92733739, 30.31772910], 
 	    zoom: 13,
-	    controls: []
+	    controls: ['zoomControl']
     }),
 		myGeoObject = new ymaps.GeoObject({
       geometry: {
