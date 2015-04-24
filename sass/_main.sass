@@ -194,18 +194,35 @@
 				display: table-cell
 				vertical-align: middle
 				text-align: center
+				po
+				&.cross
+					position: relative
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						height: 1px
+						width: 83%
+						background-color: #000  
+						left: 50%
+						+translate(-50%,0)
+						top: 50%
+					&:after
+						content: 'ПРИОСТАНОВЛЕНА'
+						display: block
+						position: absolute
+						color: #FE031B 
+						left: 50%
+						+translate(-50%,0)
+						top: 63%  
 		.price_item__info
 			margin-top: 15px
 			li
 				+ptn
-				// font-size: 14px 
-				// padding: 5px 0
 				&:last-child
 					border-bottom: 0 
 		.price_item__foo
-			position: absolute
-			// bottom: 20px
-			// width: 93% 
+			position: absolute 
 			.price_item__foo_text
 				width: 100%
 				height: 86px 
@@ -215,7 +232,6 @@
 				.brown
 					color: #906D3B
 					+pt
-					// font-size: 14px 
 					span
 						color: #282620 
 				.blue
@@ -230,7 +246,6 @@
 					color: $blue 
 				.price_item__num
 					+pt
-					// font-size: 22px  
 			.button
 				// width: 200px 
 				position: relative

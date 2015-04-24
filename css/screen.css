@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=cyrillic,latin");
 @import url("http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
@@ -134,6 +135,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .rates .price_item .price__item_in { padding: 8px; position: relative; height: 100%; display: table; }
 .rates .price_item .price_item__header { width: 100%; height: 65px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; background-color: #e8e6e1; text-align: center; display: table; }
 .rates .price_item .price_item__header h3 { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; display: table-cell; vertical-align: middle; text-align: center; }
+.rates .price_item .price_item__header h3.cross { position: relative; }
+.rates .price_item .price_item__header h3.cross:before { content: ""; display: block; position: absolute; height: 1px; width: 83%; background-color: black; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 50%; }
+.rates .price_item .price_item__header h3.cross:after { content: "ПРИОСТАНОВЛЕНА"; display: block; position: absolute; color: #fe031b; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 63%; }
 .rates .price_item .price_item__info { margin-top: 15px; }
 .rates .price_item .price_item__info li { font-family: "PT Sans Narrow", Arial, sans-serif; }
 .rates .price_item .price_item__info li:last-child { border-bottom: 0; }
@@ -345,7 +349,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .nav--orange { background-color: #fcbc69; }
 
-.nav__list--blue a { color: #445a70; }
+.nav__list--blue a { color: #0a63b0; }
 
 .promo__we--woman { background: url("../img/promo__woman.png") no-repeat 0 0; width: 319px; height: 484px; top: 35px; }
 
@@ -388,8 +392,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .price--small .price_item .price_item__foo { bottom: -10px; width: 93%; }
 .price--small .price_item .price_item__foo_text { font-size: 14px; }
 .price--small .price_item .price_item__num { font-size: 22px; }
+.price--small .price_item .price_item__num.cross_h:after { content: " "; display: block; width: 51%; height: 1px; color: #fe031b; position: absolute; border-bottom: 1px solid; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 30%; }
 .price--small .button { width: 200px; top: -10px; }
-.price--small .form { top: -9px; }
+.price--small .form { top: -9px; color: black; }
+.price--small .dis:after { content: " "; display: block; width: 39%; height: 1px; color: #fe031b; position: absolute; border-bottom: 1px solid; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 38%; }
 
 .price_item__header--blue h3 { color: #516b85; }
 
@@ -398,6 +404,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .price_item__info--brown li { border-bottom: 1px solid #282620; color: #282620; }
 
 .price_item__info--blue li { color: #516b85; border-bottom: 1px solid black; }
+
+.getting__in--scroll { overflow-x: scroll; text-align: left; }
+.getting__in--scroll .getting__list-l { width: 2200px; }
 
 .countdown-rtl { direction: rtl; }
 
