@@ -345,11 +345,13 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .bd--red { border: 3px solid #fe031b; display: inline; padding: 0 4px; }
 
-.topline__mail--orange, .topline__phone--orange { color: #ff7301; }
+.topline__mail--orange { color: #ff7301; }
+
+.topline__phone--orange { color: #516b85; }
 
 .nav--orange { background-color: #fcbc69; }
 
-.nav__list--blue a { color: #0a63b0; }
+.nav__list--blue a { color: #0a63b0; text-shadow: 0px 1px 0px; }
 
 .promo__we--woman { background: url("../img/promo__woman.png") no-repeat 0 0; width: 319px; height: 484px; top: 35px; }
 
@@ -405,8 +407,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .price_item__info--blue li { color: #516b85; border-bottom: 1px solid black; }
 
-.getting__in--scroll { overflow-x: scroll; text-align: left; }
-.getting__in--scroll .getting__list-l { width: 2200px; }
+.getting__list-l { overflow: hidden; }
 
 .countdown-rtl { direction: rtl; }
 

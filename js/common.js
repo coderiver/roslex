@@ -17,22 +17,7 @@ head.ready(function() {
 	  variableWidth: true,
    arrows: false,
 });
-// function getMonday(d) {
-//   d = new Date(d);
-//   var day = d.getDay(),
-//       diff = d.getDate() - day + (day == 0 ? -6:1); // adjust when day is sunday
-//   return new Date(d.setDate(diff + 7));
-// }
 
-// da = String(getMonday(new Date()));
-// $('.form__timer').timeTo({
-//     timeTo: new Date(new Date(da.substring(0, 15))),
-//     displayDays: 2,
-//     displayCaptions: true,
-//     fontSize: 35,
-//     captionSize: 14,
-//     lang: 'ru'
-// });
 function getMonday(d) {
   d = new Date(d);
   var day = d.getDay(),
@@ -145,9 +130,10 @@ $('.js-up').click(function(){
 		scrollTop: 0
 		},1100,'easeInOutCirc');
 });
-$(document).ready(function() {
-    $(document).on('click', '.modal_btn', function(){
-        // $('#small-modal').arcticmodal();
-    });
-	});
+$('.getting__list_slider').slick({
+		slidesToShow: 5,
+		slidesToScroll: 5,
+		infinite: false,
+		arrows: false
+});
 });
