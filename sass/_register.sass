@@ -2,27 +2,53 @@
 	color: $orange
 .topline__phone--orange
 	color: $blue
-	
+.topline__phone--green
+	color: $green
+		
 
 .nav--orange
-	background-color: #FCBC69 
+	background-color: #FCBC69
+.nav--green
+	+g(#a9e956, #7bba59)
 .nav__list--blue
 	a
 		color: #0a63b0
 		text-shadow: 0px 1px 0px 
+.nav__list--green
+	a
+		color: $green
+		text-shadow: 0px 1px 0px 
 		
+
+.button--brown
+	border: 1px solid #655638
+	+box-shadow(1px 2px 3px 0 #45403c, 1px 1px 3px #fff inset, -1px -1px 3px 0 #8f7b40 inset )
+	+gh(#e4d28f, #debb61)
+.button--orange
+	+gh(rgb(251,160,42), rgb(255,124,18))
+	+box-shadow(1px 1px 3px 0px #000)
+.button--green
+	+g(#effa46, #50c100)
+	+box-shadow(1px 1px 3px 0px #000)
+	color: $green 
 
 .promo__we--woman
 	+png(promo__woman)
 	top: 35px 
+.promo__we--man2
+	+png(promo__man2)
+	top: 34px 
 .promo__we-embl--blue
 	+png(promo__emb-blue)
-
+.promo__we-embl--green
+	+png(promo__emb-green)
 
 .promo--blue
 	background-image: url('../img/promo_bg-blue.png')
 .promo--brown
 	background-image: url('../img/promo_bg.png')
+.promo--green
+	background-image: url('../img/promo_bg-green.png')
 	
 
 .rates--reg
@@ -30,6 +56,15 @@
 	height: 750px 
 	.rates__header
 		padding-top: 27px
+.rates--reg
+	background-image: url(../img/rates_bg-reg.png)
+	height: 750px 
+	.rates__header
+		padding-top: 27px
+.rates--green
+	p , .rates__about
+		color: $dgreen 
+		font-size: 18px 
 .rates__header--brown
 	color: #282620
 	&:before, &:after
@@ -58,7 +93,30 @@
 		left: 0
 	&:after
 		right: 0
-		
+	
+.rates__header--green
+	color: $dgreen
+	letter-spacing: 1px 
+	padding-top: 27px 
+	&:before, &:after
+		position: absolute
+		+png(rates_h--green)
+		width: 254px 
+		top: 65%
+		// +translate(0,-50%) 
+	&:before
+		left: 0
+	&:after
+		right: 0		
+.rates__header_wrap--green
+	+green-g	
+
+.about__header--brown
+	color: $brown 
+.about__header--blue
+	color: #496482	
+.about__header--green
+	color: #587346
 .price--big
 	padding: 0 15px 
 	.price_item
@@ -173,13 +231,167 @@
 	li
 		color: $blue
 		border-bottom: 1px solid #000  
-
+.work--brown
+	background-image: url(../img/work-bg.png) 
+.work--blue
+	background-image: url(../img/work-bg-blue.png) 
+.work--green
+	background-image: url(../img/work-bg-green.png)
+.header-linear--green
+	&:after, &:before
+		border-top: 8px solid  #587346
+		border-bottom: 8px solid  #587346
+	span
+		color: #587346 
+.header-linear--brown
+	&:after, &:before
+		border-top: 8px solid  #6e582c
+		border-bottom: 8px solid  #6e582c
+	span
+		color: #6E582C 
+.header-linear--blue
+	&:after, &:before
+		border-top: 8px solid  $blue
+		border-bottom: 8px solid  $blue
+	span
+		color: $blue 
+.work__form--brown
+	+png(work_form)
+.work__form--org
+	+png(work_form-org)
+.work__form--green
+	+png(work_form-green)
 .getting__list-l
 	overflow: hidden 
-	
+.guarantees--brown
+	background-color: #f9f9f9
+	border-top: 1px solid #825b23
+	border-bottom: 1px solid #825b23
+	.guarantees__header
+		+png(guarantees_h)
+.guarantees--blue
+	border-top: 1px solid #d9d9d9
+	border-bottom: 1px solid #d9d9d9
+	+g(#f5e5d1, #f5af77)
+	.guarantees__header
+		+png(guarantees_h-blue)	
+.guarantees--green
+	border-top: 1px solid #b4b4b4
+	border-bottom: 1px solid #3a3a3a
+	+green-g
+	.guarantees__header
+		+png(guarantees_h-green)	
 
+.guarantees__item--brown
+	.guarantees__item_header
+		color: #3D3837 
 
+	.guarantees__item_pic
+		i
+			display: inline-block
+			&.guar_1
+				+png(guar_1)
+			&.guar_2
+				+png(guar_2)
+			&.guar_3
+				+png(guar_3)
+			&.guar_4
+				+png(guar_4)
+			&.guar_5
+				+png(guar_5)
+			&.guar_6
+				+png(guar_6)
+.guarantees__item--blue
+	.guarantees__item_header
+		color: #072c51 
+	.guarantees__item_descr
+		color: #072c51 
+	.guarantees__item_pic
+		i
+			display: inline-block
+			&.guar_1
+				+png(guar_1-blue)
+			&.guar_2
+				+png(guar_2-blue)
+			&.guar_3
+				+png(guar_3-blue)
+			&.guar_4
+				+png(guar_4-blue)
+			&.guar_5
+				+png(guar_5-blue)
+			&.guar_6
+				+png(guar_6-blue)
+.guarantees__item--green
+	.guarantees__item_header
+		color: $dgreen 
+	.guarantees__item_descr
+		color: $dgreen 
+	.guarantees__item_pic
+		i
+			display: inline-block
+			&.guar_1
+				+png(guar_1-green)
+			&.guar_2
+				+png(guar_2-green)
+			&.guar_3
+				+png(guar_3-green)
+			&.guar_4
+				+png(guar_4-green)
+			&.guar_5
+				+png(guar_5-green)
+			&.guar_6
+				+png(guar_6-green)
+//-----about
+.about--brown
+	background-image: url('../img/about_bg.png')
+.about--blue	
+	background-image: url('../img/about_bg-blue.png')
 	
+.action--brown
+	background-image: url(../img/action_bg.png) 
+	.action__header
+		padding: 10px 0
+	.button
+		margin-top: 15px 
+	
+.action--blue
+	background-image: url(../img/action_bg-blue.png) 
+	.action__header
+		padding: 6px 0
+	.button
+		font-size: 20px 
+		margin-top: 19px
+.action--green
+	background-image: url(../img/action_bg-green.png) 
+	.action__header
+		padding: 6px 0
+	.button
+		font-size: 20px 
+		margin-top: 19px
 		
-
+		
+// .form__inputs_regular
+// 	+png(form__inputs)
+// .form__inputs_orange
+// 	+png(form__inputs-org)
+// .form__inputs--dorange
+// 	+png(action_tooltip-org)
+// 	.form__inputs_in
+// 		padding-top: 26px
+// 	input
+// 		margin-bottom: 15px 
+// .form__inputs--dgreen
+// 	+png(action_tooltip-green)
+// 	.form__inputs_in
+// 		padding-top: 26px
+// 	input
+// 		margin-bottom: 15px
+// .form__inputs_green
+// 	+png(form__inputs-green)
+// .form__inputs--dbrown
+// 	+png(action_tooltip)
+// 	.form__inputs_in
+// 		padding-top: 26px
+// 	input
+// 		margin-bottom: 15px 
 

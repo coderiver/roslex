@@ -16,16 +16,23 @@ body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
+	
+=green-g
+	+g(#bbbbbb, #99b560)
 //variables
 $brown: #825b23
 $orange: #ff7301
 $blue: #516b85
+$green: #1d6714
+$dgreen: #244712
+
+
 %in
 	width: 960px
 	margin: 0 auto
 %caps
 	text-transform: uppercase 
-$ico: logo logo-blue mail phone loc loc-org
+$ico: logo logo-blue logo-green mail phone loc loc-org
 =sprite-loop
 	@each $i in $ico
 		.icon-#{$i}
@@ -55,18 +62,7 @@ $ico: logo logo-blue mail phone loc loc-org
 		z-index: 2 
 		padding: 0 10px
 		background-color: #FFF 
-.header-linear--brown
-	&:after, &:before
-		border-top: 8px solid  #6e582c
-		border-bottom: 8px solid  #6e582c
-	span
-		color: #6E582C 
-.header-linear--blue
-	&:after, &:before
-		border-top: 8px solid  $blue
-		border-bottom: 8px solid  $blue
-	span
-		color: $blue 
+
 
 
 .out
@@ -86,13 +82,6 @@ $ico: logo logo-blue mail phone loc loc-org
 	+border-radius(7px)
 	color: #3d3837
 	cursor: pointer
-.button--brown
-	border: 1px solid #655638
-	+box-shadow(1px 2px 3px 0 #45403c, 1px 1px 3px #fff inset, -1px -1px 3px 0 #8f7b40 inset )
-	+gh(#e4d28f, #debb61)
-.button--orange
-	+gh(rgb(251,160,42), rgb(255,124,18))
-	+box-shadow(1px 1px 3px 0px #000)
 
 
 		
@@ -120,8 +109,7 @@ $ico: logo logo-blue mail phone loc loc-org
 		font-size: 15px  
 		i
 			vertical-align: middle
-	.topline__mail--brown, .topline__phone--brown
-		color: $brown
+	
 			
 	.topline__mail
 		margin-right: 25px
@@ -204,6 +192,14 @@ $ico: logo logo-blue mail phone loc loc-org
 			padding-top: 26px
 		input
 			margin-bottom: 15px 
+	.form__inputs--dgreen
+		+png(action_tooltip-green)
+		.form__inputs_in
+			padding-top: 26px
+		input
+			margin-bottom: 15px
+	.form__inputs_green
+		+png(form__inputs-green)
 	.form__inputs--dbrown
 		+png(action_tooltip)
 		.form__inputs_in
