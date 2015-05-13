@@ -93,8 +93,7 @@ $('.js-open-price-form').hover(function(){
 	$(this).siblings('.form__inputs').fadeIn();
 	$('.copy-form').not($(this).parent()).find('.form__inputs').fadeOut('fast')
 }
-	// function() {
-	// $('.work-form').hide();
+
 
 	);
 
@@ -103,11 +102,7 @@ $(document).click(function(event) {
     $(".copy-form .form__inputs").fadeOut('fast');
     event.stopPropagation();
 });
-// $(document).scroll(function(){
-// 	var scroll = $(window).scrollTop();
-// 	$('.nav').addClass('is-fixed');
-// });
-// $('.js-up').hidden();
+
 $(window).scroll(function() {    
      var scroll = $(window).scrollTop();
      if ($('.js-wrap').length>0) {
