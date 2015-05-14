@@ -369,7 +369,64 @@
 		font-size: 20px 
 		margin-top: 19px
 		
+
+.feedbacks--brown
+	background-color: #C5BCAB 
+.feedbacks--blue
+	background-color: #9CABB9 
+.feedbacks--green
+	background-color: #a3bb6e 
+	border-top: 2px solid #4a6a2d 
+	border-bottom: 2px solid #4a6a2d
+.feedbacks__header--brown
+	color: #524221
+.feedbacks__header--blue
+	color: #fff 
+.feedbacks__header--green
+	color: $dgreen
+.feedback--brown
+	.feed
+		&:hover
+			+box-shadow(0 0 0 2px #634813)
+.feedback--blue
+	.feed
+		&:hover
+			+box-shadow(0 0 0 2px #072b4f)
+.feedback--green
+	.feed
+		&:hover
+			+box-shadow(0 0 0 2px $dgreen)			
+
+.contacts__header--brown
+	background-image: url('../img/contacts_bg.png')
+	span
+		color: #6E582C 
+.contacts__header--blue
+	background-image: url('../img/contacts_bg-blue.png')
+	span
+		color: $blue 
+.contacts__header--green
+	background-image: url('../img/contacts_bg-green.png')
+	span
+		color: #61815c 	
 		
+
+.footer--brown
+	background-color: #6e582c
+	+filter-gradient(#6e582c, #6e582c, horizontal)
+	+background-image(linear-gradient(left,  #6e582c 45%,#866728 59%,#6e582c 73%))
+.footer--blue
+	background-color: #072C51 	
+.footer--green
+	background-color: #1e4b17
+	
+
+.member__about--brown 
+	color: $brown 
+.member__about--blue
+	color: #072c51 	
+.member__about--green
+	color: $dgreen 	
 // .form__inputs_regular
 // 	+png(form__inputs)
 // .form__inputs_orange
@@ -395,3 +452,161 @@
 // 	input
 // 		margin-bottom: 15px 
 
+.member__photo--size
+	width: auto
+	height: auto
+
+.rates__footer
+	.rates__footer_in
+		@extend %in
+		padding: 30px 0 
+	.rates__footer_desc
+		p
+			+pt-b
+			font-size: 21px 
+			line-height: 1em
+			letter-spacing: 1px  
+	.rates__footer_note
+		margin-top: 20px
+		h5
+			+ptn
+			font-size: 21px 
+			letter-spacing: 1px 
+		ul
+		li
+			font-size: 21px
+			position: relative
+			margin-top: 20px 	
+			margin-left: 24px  
+			+ptn-i
+			&:before
+				content: ''
+				position: absolute
+				display: inline-block
+				left: -20px
+				top: 10px  
+				width: 12px 
+				height: 12px
+				+border-radius(50%)
+				 
+					
+.rates__footer--green
+	background-color: #e4ebd4  
+	border-top: 27px solid #a4bd70
+	border-bottom: 27px solid #a4bd70
+	+box-shadow(1px 0 2px 0 #9fa562 inset)
+	.rates__footer_desc
+		p
+			color: $dgreen 
+	.rates__footer_note
+		color: $dgreen 
+		li
+			&:before
+				+g(#ecf646, #50c100)
+				
+.order--h
+	width: 100%
+	+box-sizing(border-box)
+	padding: 10px  
+.order__header
+	text-align: center
+	overflow: hidden 
+	h4
+		font-size: 24px
+		display: inline-block
+		+pt-b
+		text-transform: uppercase
+		position: relative
+		padding: 0 5px 
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			+translate(0,-50%)
+			margin-top: -1px
+			height: 10px
+			width: 1000px
+			background: $dgreen
+		&:before
+			left: -1000px
+		&:after
+			right: -1000px
+.order
+	+gpu
+.order__item
+	width: 100% 
+	+box-sizing(border-box)
+	padding: 10px  
+	background-color: #EBEAE8 
+	text-align: left
+	+clr
+	+border-radius(15px)
+	+box-shadow(0 0 10px #838977)
+	margin-bottom: 7px 
+	>div
+		display: inline-block
+		vertical-align: middle
+	.order__item_descr
+		width: 490px
+		+box-sizing(border-box)
+		padding-right: 10px 
+		p
+			+ptn
+			font-size: 24px
+			line-height: 1.1em 
+			letter-spacing: 1px 
+			color: $dgreen
+	.order__item_price
+		width: 270px 
+		+box-sizing(border-box)
+		padding-right: 10px 
+		p
+			+ptn-b
+			font-size: 24px
+			color: $dgreen 
+			line-height: 1em 
+	.order__item_form
+		width: 160px
+		.button
+			width: 100%
+			font-size: 28px  
+.order__content
+	display: none
+	+box-sizing(border-box)
+	padding: 10px
+
+
+	
+
+	
+
+
+.order__item_form
+	.button
+		margin-top: 0
+
+.order__header
+	margin-bottom: 15px
+	h4
+		+pt-b
+		font-size: 26px
+		text-decoration: underline
+		cursor: pointer
+	&.is-active
+		h4
+			text-decoration: none
+.order__header--green
+	h4
+		color: $dgreen 
+.rates__body--green
+	.order
+		+g(#d0d0cb, #98b460)
+
+
+.order__item
+	.form
+		position: relative
+		.form__inputs
+			position: absolute
+			+translate(-31%, -106%)

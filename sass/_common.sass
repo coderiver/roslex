@@ -12,6 +12,12 @@
 	font-style: italic  
 =ptn
 	font-family: 'PT Sans Narrow', Arial, sans-serif 
+=ptn-i
+	font-family: 'PT Sans Narrow', Arial, sans-serif 
+	font-style: italic 
+=ptn-b
+	font-family: 'PT Sans Narrow', Arial, sans-serif 
+	font-weight: 700 
 body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
@@ -32,7 +38,7 @@ $dgreen: #244712
 	margin: 0 auto
 %caps
 	text-transform: uppercase 
-$ico: logo logo-blue logo-green mail phone loc loc-org
+$ico: logo logo-blue logo-green mail phone loc loc-org loc-green
 =sprite-loop
 	@each $i in $ico
 		.icon-#{$i}

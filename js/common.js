@@ -131,4 +131,31 @@ $('.getting__list_slider').slick({
 		infinite: false,
 		arrows: false
 });
+$('.js-open-order').on('click', function(e){
+	e.preventDefault();
+	var $this = $(this),
+			item = $this.closest('.order'),
+			list = $this.closest('.rates__body'),
+			items = list.find('.order'),
+			content = item.find('.order__content')
+			otherContent = list.find('.order__content'),
+			duration = 300;
+	
+	if(!item.hasClass('is-active')) {
+		// items.removeClass('is-active');
+		item.addClass('is-active');
+		$this.addClass('is-active');
+
+		// otherContent.stop(true, true).slideUp(duration);
+		content.stop(true, true).slideDown(duration);
+
+	} else {
+		$this.removeClass('is-active');
+
+		content.stop(true, true).slideUp(duration);
+		item.stop(true, true).removeClass('is-active');
+	}
+
+})
+
 });

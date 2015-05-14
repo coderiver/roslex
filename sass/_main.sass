@@ -194,7 +194,6 @@
 				display: table-cell
 				vertical-align: middle
 				text-align: center
-				po
 				&.cross
 					position: relative
 					&:before
@@ -264,7 +263,8 @@
 					+translate(-25%, 0)
 					top: -150px
 				 	
-					
+.rates__body_in
+	@extend %in				
 				
 .ie, .ff
 	.price
@@ -574,10 +574,7 @@
 	 
 
 //-----feedbacks
-.feedbacks--brown
-	background-color: #C5BCAB 
-.feedbacks--blue
-	background-color: #9CABB9 
+
 .feedbacks
 	padding-bottom: 60px
 	overflow: hidden  
@@ -590,10 +587,7 @@
 		// +background-image(radial-gradient(45px 50px, #816327 10px, #524221 30px))
 		// +background-clip(text)
 		// color: transparent
-	.feedbacks__header--brown
-		color: #524221
-	.feedbacks__header--blue
-		color: #fff 
+
 	
 		
 	.slider
@@ -638,14 +632,7 @@
 				font-size: 12px 
 				line-height: 1.1em
 				padding-top: 6px  
-	.feedback--brown
-		.feed
-			&:hover
-				+box-shadow(0 0 0 2px #634813)
-	.feedback--blue
-		.feed
-			&:hover
-				+box-shadow(0 0 0 2px #072b4f)
+
 				
 
 //-----team
@@ -666,10 +653,7 @@
 .team__list_wrap
 	@extend %in
 .member
-	.member__about--brown 
-		color: $brown 
-	.member__about--blue
-		color: #072c51 
+
 	.member__surname
 		// color: #3d3837 
 		+pt-b
@@ -682,24 +666,15 @@
 		+pt-i
 		font-size: 11px 
 		color: #989696 
-	.member__photo
-		width: 150px 
-		height: 150px
-		img
-			width: 100%
-			height: 100% 
+.member__photo
+	width: 150px 
+	height: 150px
+	img
+		width: 100%
+		height: 100% 
 			
 //-----contacts
 .contacts
-	.contacts__header--brown
-		background-image: url('../img/contacts_bg.png')
-		span
-			color: #6E582C 
-	.contacts__header--blue
-		background-image: url('../img/contacts_bg-blue.png')
-		span
-			color: $blue 
-
 	.contacts__header
 		text-align: center
 		position: relative
@@ -722,12 +697,7 @@
 		margin-top: -26px 
 
 //-----footer
-.footer--brown
-	background-color: #6e582c
-	+filter-gradient(#6e582c, #6e582c, horizontal)
-	+background-image(linear-gradient(left,  #6e582c 45%,#866728 59%,#6e582c 73%))
-.footer--blue
-	background-color: #072C51 
+
 .footer 
 	padding-bottom: 20px 
 	.footer__in
