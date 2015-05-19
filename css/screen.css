@@ -276,7 +276,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .up--reg { background: url("../img/up_reg.png") no-repeat 0 0; width: 45px; height: 43px; }
 
-.bd--red { border: 3px solid #fe031b; display: inline; padding: 0 4px; }
+.bd--red { border: 3px solid #fe031b; display: inline; padding: 0 4px; white-space: nowrap; }
 
 .topline__mail--orange { color: #ff7301; }
 
